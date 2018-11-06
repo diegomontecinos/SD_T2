@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.Aeropuerto";
+option java_outer_classname = "AeropuertoProto";
+option objc_class_prefix = "HLW";
+
+package Aeropuerto;
+
+//asignacion pista de despegue
+service PDespegue{
+  rpc enviar_despegue (Pista_Des) returns (Resp_Des){}
+}
+
+message Pista_Des{
+  bool autorizacion_despegue = 1;
+  int32 Pista_despegue = 2;
+  int32 altura_despegue = 3;
+  int32 posicion_despegue = 4;
+  string anterior_despegue = 5;
+}
+
+message Resp_Des{
+  string flagDes = 1;
+}
+
+
+//asignacion pista de aterrizaje
+service Pista_aterrizaje{
+  rpc enviar_aterrizaje (Pista_At) returns (Resp_At){}
+}
+
+message Pista_At{
+  bool autorizacion_aterrizaje = 1;
+  int32 Pista_aterrizaje = 2;
+  int32 altura_aterrizaje = 3;
+  int32 posicion_aterrizaje = 4;
+  string anterior_aterrizaje = 5;
+}
+
+message Resp_At{
+  string flagAt = 1;
+}
