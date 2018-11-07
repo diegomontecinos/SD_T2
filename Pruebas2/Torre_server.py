@@ -35,16 +35,18 @@ class PDespegue(Torre_pb2_grpc.PDespegueServicer):
     def __init__(self):
         print("Bienvenido a la torre de control")
         self.nombre = input("Por favor ingrese nombre del aeropuerto: ")
-        self.IP = input("Por favor ingrese la dirección IP del aeropuerto "+nombre+": ")
-        self.pistas = input("Por favor ingrese cantidad de pistas del aeropuerto "+nombre+": ")
+        self.IP = input("Por favor ingrese la dirección IP del aeropuerto "+self.nombre+": ")
+        self.pistas = input("Por favor ingrese cantidad de pistas del aeropuerto "+self.nombre+": ")
         self.altura = 4050 #altura en metros
         self.Pentrada = dict()
         self.Pentrada["Pista 0"] = "Pista 0"
         self.Psalidas = dict()
         self.Psalidas["Pista 0"] = "Pista 0"
-        for i in range(pistas):
-            self.Pentrada["Pista "+str(i+1)] = list()
-            self.Psalidas["Pista "+str(i+1)] = list()
+        for i in range(self.pistas):
+            self.auxx = i+1
+            self.aux2 = str(self.auxx)
+            self.Pentrada["Pista ",self.aux2] = list()
+            self.Psalidas["Pista ",self.aux2] = list()
         self.mas = input("¿Desea agregar destinos? [S/N] :")
         self.destinos = dict()
         #flag para pistas de Aterrizaje
@@ -55,7 +57,7 @@ class PDespegue(Torre_pb2_grpc.PDespegueServicer):
         #cola de Aterrizaje
         while mas == 'S' or mas == 's':
             self.nombre2 = input("ingrese sonmbre de nuevo destino: ")
-            self.IP2 = input("Ingrese dirección IP del aeropuerto "+nombre2+": ")
+            self.IP2 = input("Ingrese dirección IP del aeropuerto "+self.nombre2+": ")
             self.destinos[nombre2] = IP2
             self.mas = input("¿Desea agregar destinos? [S/N] :")
 
@@ -78,8 +80,8 @@ class PDespegue(Torre_pb2_grpc.PDespegueServicer):
         for i in range(self.pistas):
             if len(self.Psalidas["Pista "+str(i+1)])<self.pistas:
                 #ver si está en esa cola y sacarlo
-                self.altura +=50
-                return aterrizar(1,(i+1),"nadie",self.altura +=50,self.Psalidas["Pista 0"])
+                self.altura = self.altura + 50
+                return aterrizar(1,(i+1),"nadie",self.altura,self.Psalidas["Pista 0"])
 
         self.altura +=50
         aux = self.Psalidas["Pista 0"]
@@ -87,7 +89,16 @@ class PDespegue(Torre_pb2_grpc.PDespegueServicer):
         pos = len(self.Psalidas[aux])-1
         return aterrizar(0,pos,anterior,self.altura,aux)
 
-
+def serve():
+    server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
+    Torre_pb2_grpc.add_PDespegueServicer_to_server(PDespegue(),server)
+    server.add_insecure_port('[::]:50051')#cambiar por la ip+puerto
+    server.start()
+    try:
+        while True:
+            time.sleep(60*60*24)
+    except KeyboardInterrupt:
+        server.stop(0)
 
 if __name__ == '__main__':
     serve()
