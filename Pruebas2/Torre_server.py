@@ -14,22 +14,7 @@ import Torre_pb2_grpc
 
 
 
-def despegar(flag,pos,anterior,altura,pista):
-    with grpc.insecure_channel('localhost:50051') as channel: #cambiar por ip+puerto
-        stub = Torre_pb2_grpc.Pista_DesStub(channel)
-        if flag == 0:
-            response = stub.enviar_despegue(Torre_pb2.Pista_Des(Autorizacion_despegue = False, Pista_despegue = pista, Altura_despegue = altura, Posicion_despegue = pos,anterior_despegue = anterior,Ip_destino=2,Id_avion = 1))
-        else:
-            response = stub.enviar_despegue(Torre_pb2.Pista_Des(autorizacion_despegue = True, Pista_despegue = pista, Altura_despegue = altura, Posicion_despegue = pos, Anterior_despegue = anterior,Ip_destino=2,Id_avion= 1))
 
-
-def aterrizar(flag,pos,anterior,altura,pista):
-    with grpc.insecure_channel('localhost:50051') as channel: #cambiar por ip+puerto
-        stub = Torre_pb2_grpc.Pista_AtgueStub(channel)
-        if flag == 0:
-            response = stub.enviar_aterrizaje(Torre_pb2.Pista_At(autorizacion_aterrizaje = False, Pista_aterrizaje = pista, altura_aterrizaje = altura, posicion_aterrizaje = pos,anterior_aterrizaje = anterior))
-        else:
-            response = stub.enviar_aterrizaje(Torre_pb2.Pista_At(autorizacion_aterrizaje = True, Pista_aterrizaje = pista, altura_aterrizaje = altura, posicion_aterrizaje = pos,anterior_aterrizaje = anterior))
 
 
 
@@ -46,9 +31,7 @@ class Despegue(Torre_pb2_grpc.DespegueServicer):
         self.Psalidas["Pista 0"] = "Pista 0"
         for i in range(self.pistas):
             self.auxx = i+1
-            print("i+1 = ",self.auxx)
             self.aux2 = str(self.auxx)
-            print(type(self.aux2))
             self.Pentrada["Pista ",self.aux2] = list()
             self.Psalidas["Pista ",self.aux2] = list()
         self.mas = input("¿Desea agregar destinos? [S/N] :")
@@ -64,9 +47,26 @@ class Despegue(Torre_pb2_grpc.DespegueServicer):
             self.IP2 = input("Ingrese dirección IP del aeropuerto "+self.nombre2+": ")
             self.destinos[self.nombre2] = self.IP2
             self.mas = input("¿Desea agregar destinos? [S/N] :")
+    @staticmethod
+    def despegar(flag, pos, anterior, altura, pista):
+        with grpc.insecure_channel('localhost:50051') as channel: #cambiar por ip+puerto
+            stub = Torre_pb2_grpc.DespegueStub(channel)
+            if flag == 0:
+                response = stub.enviar_despegue(Torre_pb2.Resp_Des(Autorizacion_despegue = False, Pista_despegue = pista, Altura_despegue = altura, Posicion_despegue = pos,anterior_despegue = anterior, Ip_destino="2",Id_avion = "1"))
+            else:
+                response = stub.enviar_despegue(Torre_pb2.Resp_Des(Autorizacion_despegue = True, Pista_despegue = pista, Altura_despegue = altura, Posicion_despegue = pos, Anterior_despegue = anterior,Ip_destino="2",Id_avion= "1"))
+
+
+    def aterrizar(flag,pos,anterior,altura,pista):
+        with grpc.insecure_channel('localhost:50051') as channel: #cambiar por ip+puerto
+            stub = Torre_pb2_grpc.Pista_AtgueStub(channel)
+            if flag == 0:
+                response = stub.enviar_aterrizaje(Torre_pb2.Pista_At(Autorizacion_aterrizaje = False, Pista_aterrizaje = pista, altura_aterrizaje = altura, posicion_aterrizaje = pos,anterior_aterrizaje = anterior))
+            else:
+                response = stub.enviar_aterrizaje(Torre_pb2.Pista_At(autorizacion_aterrizaje = True, Pista_aterrizaje = pista, altura_aterrizaje = altura, posicion_aterrizaje = pos,anterior_aterrizaje = anterior))
 
     def enviar_despegue (self, request, context):
-        return (despegar(1,0,"nadie",0,1))
+        return (self.despegar(1, 0, 'nadie', 0, 1))
         """for i in range(self.pistas):
             if len(self.Pentrada["Pista ",str(i+1)])<self.pistas:
                 #if() revisar si está en esa lista y sacarlo de ahúí

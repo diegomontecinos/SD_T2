@@ -9,7 +9,7 @@ namespace Avion
     {
         public static void Main(string[] args)
         {
-            Channel channel = new Channel("127.0.0.1:500051", ChannelCredentials.Insecure);
+            Channel channel = new Channel("127.0.0.1:50051", ChannelCredentials.Insecure);
 
             var cliente = new Despegue.DespegueClient(channel);
             Console.WriteLine("Ingrese la ID del avion: ");
@@ -17,7 +17,8 @@ namespace Avion
             Console.WriteLine("Ingrese aeropuerto de destino: ");
             String destino = Console.ReadLine();
 
-            var reply = cliente.enviar_despegue(new Pista_Des {IdAvion = user, NameDestino = destino});
+            Resp_Des reply = cliente.enviar_despegue(new Pista_Des {IdAvion = user, NameDestino = destino});
+            Console.WriteLine("print");
             Console.WriteLine("Autprizacion" + reply.AutorizacionDespegue);
             Console.WriteLine("Pista" + reply.PistaDespegue);
             Console.WriteLine("Altura" + reply.AlturaDespegue);
