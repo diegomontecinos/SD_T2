@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "proto_to_java.Aeropuerto";
+option java_outer_classname = "AeropuertoProto";
+option objc_class_prefix = "HLW";
+
+package Aeropuerto;
+
+service Prueba {
+  rpc enviar_altura (mensaje) returns (respuesta){}
+
+}
+
+message mensaje {
+  int32 altura = 1;
+
+}
+
+message respuesta {
+  string flag = 1;
+}

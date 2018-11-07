@@ -1,11 +1,14 @@
-package io.grpc.examples.helloworld;
 
-import io.grpc.ManagedChannel;
-import io.grpc.ManagedChannelBuilder;
-import io.grpc.StatusRuntimeException;
+//import grpc.StatusRuntimeException;
+//import grpc.ManagedChannelBuilder;
+//import grpc.ManagedChannel;
+
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import groc.*;
+import proto_to_java.Aeropuerto.*;
 
 /**
  * A simple client that requests a greeting from the {@link HelloWorldServer}.
@@ -17,7 +20,7 @@ public class AeropuertoClient {
     private final PruebaGrpc.PruebaBlockingStub blockingStub;
 
     /** Construct client connecting to HelloWorld server at {@code host:port}. */
-    public HelloWorldClient(String host, int port) {
+    public AeropuertoClient(String host, int port) {
         this(ManagedChannelBuilder.forAddress(host, port)
                 // Channels are secure by default (via SSL/TLS). For the example we disable TLS to avoid
                 // needing certificates.
@@ -26,7 +29,7 @@ public class AeropuertoClient {
     }
 
     /** Construct client for accessing HelloWorld server using the existing channel. */
-    HelloWorldClient(ManagedChannel channel) {
+    AeropuertoClient(ManagedChannel channel) {
         this.channel = channel;
         blockingStub = GreeterGrpc.newBlockingStub(channel);
     }
@@ -36,12 +39,13 @@ public class AeropuertoClient {
     }
 
     /** Say hello to server. */
-    public void greet(String name) {
-        logger.info("Will try to greet " + name + " ...");
-        HelloRequest request = HelloRequest.newBuilder().setName(name).build();
-        HelloReply response;
+    public void saludo(String name) {
+        logger.info("tratando de saludar a  " + name + " ...");
+        mensaje request = mensajeRequest.newBuilder().setName(name).build();
+        respuesta response;
+
         try {
-            response = blockingStub.sayHello(request);
+            response = blockingStub.enviar_altura(request);
         } catch (StatusRuntimeException e) {
             logger.log(Level.WARNING, "RPC failed: {0}", e.getStatus());
             return;
@@ -54,10 +58,10 @@ public class AeropuertoClient {
      * greeting.
      */
     public static void main(String[] args) throws Exception {
-        HelloWorldClient client = new HelloWorldClient("localhost", 50051);
+        AeropuertoClient client = new AeropuertoClient("localhost", 50051);
         try {
             /* Access a service running on the local machine on port 50051 */
-            String user = "world";
+            String user = "OK";
             if (args.length > 0) {
                 user = args[0]; /* Use the arg as the name to greet if provided */
             }
