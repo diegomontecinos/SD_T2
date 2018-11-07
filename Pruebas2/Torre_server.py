@@ -46,7 +46,7 @@ class PDespegue(Torre_pb2_grpc.PDespegueServicer):
             self.auxx = i+1
             print("i+1 = ",self.auxx)
             self.aux2 = str(self.auxx)
-            print("aux2 = "+aux2)
+            print(type(self.aux2))
             self.Pentrada["Pista ",self.aux2] = list()
             self.Psalidas["Pista ",self.aux2] = list()
         self.mas = input("¿Desea agregar destinos? [S/N] :")
@@ -57,15 +57,16 @@ class PDespegue(Torre_pb2_grpc.PDespegueServicer):
         #self.colaDesp = list()
         #self.colaAt = list()
         #cola de Aterrizaje
-        while mas == 'S' or mas == 's':
+        while self.mas == 'S' or self.mas == 's':
             self.nombre2 = input("ingrese sonmbre de nuevo destino: ")
             self.IP2 = input("Ingrese dirección IP del aeropuerto "+self.nombre2+": ")
-            self.destinos[nombre2] = IP2
+            self.destinos[self.nombre2] = self.IP2
             self.mas = input("¿Desea agregar destinos? [S/N] :")
 
     def enviar_despegue (self, request, context):
-        for i in range(self.pistas):
-            if len(self.Pentrada["Pista "+str(i+1)])<self.pistas:
+        return (despegar(1,0,"nadie",0,1))
+        """for i in range(self.pistas):
+            if len(self.Pentrada["Pista ",str(i+1)])<self.pistas:
                 #if() revisar si está en esa lista y sacarlo de ahúí
                 #sacarlo de la cola
                 self.altura = self.altura + 50
@@ -77,6 +78,7 @@ class PDespegue(Torre_pb2_grpc.PDespegueServicer):
         self.Pentrada[aux].append(self.nombre)#es el nombre del avion
         pos = len(self.Pentrada[aux])-1
         return despegar(0,pos,anterior,0,aux)
+        """
 
     def enviar_aterrizaje (self, request, context):
         for i in range(self.pistas):
