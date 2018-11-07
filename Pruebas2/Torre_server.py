@@ -1,3 +1,4 @@
+# python -m grpc_tools.protoc -I"." --python_out=. --grpc_python_out=. ./Torre.proto
 from concurrent import futures
 import time
 import random
@@ -17,9 +18,10 @@ def despegar(flag,pos,anterior,altura,pista):
     with grpc.insecure_channel('localhost:50051') as channel: #cambiar por ip+puerto
         stub = Torre_pb2_grpc.Pista_DesStub(channel)
         if flag == 0:
-            response = stub.enviar_despegue(Torre_pb2.Pista_Des(autorizacion_despegue = False, Pista_despegue = pista, altura_despegue = altura, posicion_despegue = pos,anterior_despegue = anterior))
+            response = stub.enviar_despegue(Torre_pb2.Pista_Des(Autorizacion_despegue = False, Pista_despegue = pista, Altura_despegue = altura, Posicion_despegue = pos,anterior_despegue = anterior,Ip_destino=2,Id_avion = 1))
         else:
-            response = stub.enviar_despegue(Torre_pb2.Pista_Des(autorizacion_despegue = True, Pista_despegue = pista, altura_despegue = altura, posicion_despegue = pos,anterior_despegue = anterior))
+            response = stub.enviar_despegue(Torre_pb2.Pista_Des(autorizacion_despegue = True, Pista_despegue = pista, Altura_despegue = altura, Posicion_despegue = pos, Anterior_despegue = anterior,Ip_destino=2,Id_avion= 1))
+
 
 def aterrizar(flag,pos,anterior,altura,pista):
     with grpc.insecure_channel('localhost:50051') as channel: #cambiar por ip+puerto
@@ -31,7 +33,7 @@ def aterrizar(flag,pos,anterior,altura,pista):
 
 
 
-class PDespegue(Torre_pb2_grpc.PDespegueServicer):
+class Despegue(Torre_pb2_grpc.DespegueServicer):
     def __init__(self):
         print("Bienvenido a la torre de control")
         self.nombre = input("Por favor ingrese nombre del aeropuerto: ")
@@ -95,7 +97,7 @@ class PDespegue(Torre_pb2_grpc.PDespegueServicer):
 
 def serve():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
-    Torre_pb2_grpc.add_PDespegueServicer_to_server(PDespegue(),server)
+    Torre_pb2_grpc.add_DespegueServicer_to_server(Despegue(),server)
     server.add_insecure_port('[::]:50051')#cambiar por la ip+puerto
     server.start()
     try:

@@ -8,36 +8,45 @@ option objc_class_prefix = "HLW";
 package Aeropuerto;
 
 //asignacion pista de despegue
-service PDespegue{
+
+service Despegue{
   rpc enviar_despegue (Pista_Des) returns (Resp_Des){}
 }
 
 message Pista_Des{
-  bool autorizacion_despegue = 1;
-  int32 Pista_despegue = 2;
-  int32 altura_despegue = 3;
-  int32 posicion_despegue = 4;
-  string anterior_despegue = 5;
+
+  string Id_avion = 1;
+  string Name_destino = 2;
+
 }
 
 message Resp_Des{
-  string flagDes = 1;
-}
+  bool Autorizacion_despegue = 1;
+  int32 Pista_despegue = 2;
+  int32 Altura_despegue = 3;
+  int32 Posicion_despegue = 4;
+  string Anterior_despegue = 5;
+  string Ip_destino = 6;
+  string Id_avion = 7;
+  }
 
 
 //asignacion pista de aterrizaje
-service Pista_aterrizaje{
+service Aterrizaje{
   rpc enviar_aterrizaje (Pista_At) returns (Resp_At){}
 }
 
 message Pista_At{
-  bool autorizacion_aterrizaje = 1;
-  int32 Pista_aterrizaje = 2;
-  int32 altura_aterrizaje = 3;
-  int32 posicion_aterrizaje = 4;
-  string anterior_aterrizaje = 5;
+  string Id_avion = 1;
+
 }
 
 message Resp_At{
-  string flagAt = 1;
+
+  bool Autorizacion_aterrizaje = 1;
+  int32 Pista_aterrizaje = 2;
+  int32 Altura_aterrizaje = 3;
+  int32 Posicion_aterrizaje = 4;
+  string Anterior_aterrizaje = 5;
+  string Id_avion = 6;
 }

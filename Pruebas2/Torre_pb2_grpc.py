@@ -4,8 +4,9 @@ import grpc
 import Torre_pb2 as Torre__pb2
 
 
-class PDespegueStub(object):
+class DespegueStub(object):
   """asignacion pista de despegue
+
   """
 
   def __init__(self, channel):
@@ -15,14 +16,15 @@ class PDespegueStub(object):
       channel: A grpc.Channel.
     """
     self.enviar_despegue = channel.unary_unary(
-        '/Aeropuerto.PDespegue/enviar_despegue',
+        '/Aeropuerto.Despegue/enviar_despegue',
         request_serializer=Torre__pb2.Pista_Des.SerializeToString,
         response_deserializer=Torre__pb2.Resp_Des.FromString,
         )
 
 
-class PDespegueServicer(object):
+class DespegueServicer(object):
   """asignacion pista de despegue
+
   """
 
   def enviar_despegue(self, request, context):
@@ -33,7 +35,7 @@ class PDespegueServicer(object):
     raise NotImplementedError('Method not implemented!')
 
 
-def add_PDespegueServicer_to_server(servicer, server):
+def add_DespegueServicer_to_server(servicer, server):
   rpc_method_handlers = {
       'enviar_despegue': grpc.unary_unary_rpc_method_handler(
           servicer.enviar_despegue,
@@ -42,11 +44,11 @@ def add_PDespegueServicer_to_server(servicer, server):
       ),
   }
   generic_handler = grpc.method_handlers_generic_handler(
-      'Aeropuerto.PDespegue', rpc_method_handlers)
+      'Aeropuerto.Despegue', rpc_method_handlers)
   server.add_generic_rpc_handlers((generic_handler,))
 
 
-class Pista_aterrizajeStub(object):
+class AterrizajeStub(object):
   """asignacion pista de aterrizaje
   """
 
@@ -57,13 +59,13 @@ class Pista_aterrizajeStub(object):
       channel: A grpc.Channel.
     """
     self.enviar_aterrizaje = channel.unary_unary(
-        '/Aeropuerto.Pista_aterrizaje/enviar_aterrizaje',
+        '/Aeropuerto.Aterrizaje/enviar_aterrizaje',
         request_serializer=Torre__pb2.Pista_At.SerializeToString,
         response_deserializer=Torre__pb2.Resp_At.FromString,
         )
 
 
-class Pista_aterrizajeServicer(object):
+class AterrizajeServicer(object):
   """asignacion pista de aterrizaje
   """
 
@@ -75,7 +77,7 @@ class Pista_aterrizajeServicer(object):
     raise NotImplementedError('Method not implemented!')
 
 
-def add_Pista_aterrizajeServicer_to_server(servicer, server):
+def add_AterrizajeServicer_to_server(servicer, server):
   rpc_method_handlers = {
       'enviar_aterrizaje': grpc.unary_unary_rpc_method_handler(
           servicer.enviar_aterrizaje,
@@ -84,5 +86,5 @@ def add_Pista_aterrizajeServicer_to_server(servicer, server):
       ),
   }
   generic_handler = grpc.method_handlers_generic_handler(
-      'Aeropuerto.Pista_aterrizaje', rpc_method_handlers)
+      'Aeropuerto.Aterrizaje', rpc_method_handlers)
   server.add_generic_rpc_handlers((generic_handler,))
