@@ -49,6 +49,7 @@ class Despegue(Torre_pb2_grpc.DespegueServicer):
             self.mas = input("¿Desea agregar destinos? [S/N] :")
     @staticmethod
     def despegar(flag, pos, anterior, altura, pista):
+
         with grpc.insecure_channel('localhost:50051') as channel: #cambiar por ip+puerto
             stub = Torre_pb2_grpc.DespegueStub(channel)
             if flag == 0:
