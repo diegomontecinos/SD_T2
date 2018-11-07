@@ -36,7 +36,7 @@ class PDespegue(Torre_pb2_grpc.PDespegueServicer):
         print("Bienvenido a la torre de control")
         self.nombre = input("Por favor ingrese nombre del aeropuerto: ")
         self.IP = input("Por favor ingrese la dirección IP del aeropuerto "+self.nombre+": ")
-        self.pistas = input("Por favor ingrese cantidad de pistas del aeropuerto "+self.nombre+": ")
+        self.pistas = int(input("Por favor ingrese cantidad de pistas del aeropuerto "+self.nombre+": "))
         self.altura = 4050 #altura en metros
         self.Pentrada = dict()
         self.Pentrada["Pista 0"] = "Pista 0"
@@ -44,7 +44,9 @@ class PDespegue(Torre_pb2_grpc.PDespegueServicer):
         self.Psalidas["Pista 0"] = "Pista 0"
         for i in range(self.pistas):
             self.auxx = i+1
+            print("i+1 = ",self.auxx)
             self.aux2 = str(self.auxx)
+            print("aux2 = "+aux2)
             self.Pentrada["Pista ",self.aux2] = list()
             self.Psalidas["Pista ",self.aux2] = list()
         self.mas = input("¿Desea agregar destinos? [S/N] :")
@@ -66,7 +68,7 @@ class PDespegue(Torre_pb2_grpc.PDespegueServicer):
             if len(self.Pentrada["Pista "+str(i+1)])<self.pistas:
                 #if() revisar si está en esa lista y sacarlo de ahúí
                 #sacarlo de la cola
-                self.altura +=50
+                self.altura = self.altura + 50
                 return despegar(1,-1,"nadie",self.altura,self.Pentrada["Pista 0"])
                 #break
         #anterior = colaDesp[-1] ver bien como ver el anterior
