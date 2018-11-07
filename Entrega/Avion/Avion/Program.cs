@@ -17,6 +17,7 @@ namespace Avion
             Console.WriteLine("Ingrese aeropuerto de destino: ");
             String destino = Console.ReadLine();
 
+            var reply = cliente.enviar_despegue(new Pista_Des {IdAvion = user, NameDestino = destino});
             Console.WriteLine("print");
             Console.WriteLine("Autprizacion" + reply.AutorizacionDespegue);
             Console.WriteLine("Pista" + reply.PistaDespegue);
