@@ -12,13 +12,22 @@ namespace Avion
             Channel channel = new Channel("127.0.0.1:500051", ChannelCredentials.Insecure);
 
             var cliente = new Despegue.DespegueClient(channel);
-            String user = "Avion X";
+            Console.WriteLine("Ingrese la ID del avion: ");
+            string user = Console.ReadLine();
+            Console.WriteLine("Ingrese aeropuerto de destino: ");
+            String destino = Console.ReadLine();
 
-            var reply = cliente.enviar_despegue(new Pista_Des { IdAvion = user });
+            var reply = cliente.enviar_despegue(new Pista_Des {IdAvion = user, NameDestino = destino});
             Console.WriteLine("Autprizacion" + reply.AutorizacionDespegue);
+            Console.WriteLine("Pista" + reply.PistaDespegue);
+            Console.WriteLine("Altura" + reply.AlturaDespegue);
+            Console.WriteLine("Pos" + reply.PosicionDespegue);
+            Console.WriteLine("Ant" + reply.AnteriorDespegue);
+            Console.WriteLine("Ip" + reply.IpDestino);
+            Console.WriteLine("Id" + reply.IdAvion);
 
             channel.ShutdownAsync().Wait();
-            Console.WriteLine("presione alguna wea");
+            Console.WriteLine("presione cualquier tecla para salir: ");
             Console.ReadKey();
 
 

@@ -24,25 +24,26 @@ namespace Aeropuerto {
     static TorreReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgtUb3JyZS5wcm90bxIKQWVyb3B1ZXJ0byIdCglQaXN0YV9EZXMSEAoISWRf",
-            "YXZpb24YASABKAkitgEKCFJlc3BfRGVzEh0KFUF1dG9yaXphY2lvbl9kZXNw",
-            "ZWd1ZRgBIAEoCBIWCg5QaXN0YV9kZXNwZWd1ZRgCIAEoBRIXCg9BbHR1cmFf",
-            "ZGVzcGVndWUYAyABKAUSGQoRUG9zaWNpb25fZGVzcGVndWUYBCABKAUSGQoR",
-            "QW50ZXJpb3JfZGVzcGVndWUYBSABKAkSEgoKSXBfZGVzdGlubxgGIAEoCRIQ",
-            "CghJZF9hdmlvbhgHIAEoCSIcCghQaXN0YV9BdBIQCghJZF9hdmlvbhgBIAEo",
-            "CSKrAQoHUmVzcF9BdBIfChdBdXRvcml6YWNpb25fYXRlcnJpemFqZRgBIAEo",
-            "CBIYChBQaXN0YV9hdGVycml6YWplGAIgASgFEhkKEUFsdHVyYV9hdGVycml6",
-            "YWplGAMgASgFEhsKE1Bvc2ljaW9uX2F0ZXJyaXphamUYBCABKAUSGwoTQW50",
-            "ZXJpb3JfYXRlcnJpemFqZRgFIAEoCRIQCghJZF9hdmlvbhgGIAEoCTJMCghE",
-            "ZXNwZWd1ZRJACg9lbnZpYXJfZGVzcGVndWUSFS5BZXJvcHVlcnRvLlBpc3Rh",
-            "X0RlcxoULkFlcm9wdWVydG8uUmVzcF9EZXMiADJOCgpBdGVycml6YWplEkAK",
-            "EWVudmlhcl9hdGVycml6YWplEhQuQWVyb3B1ZXJ0by5QaXN0YV9BdBoTLkFl",
-            "cm9wdWVydG8uUmVzcF9BdCIAQjYKG2lvLmdycGMuZXhhbXBsZXMuQWVyb3B1",
-            "ZXJ0b0IPQWVyb3B1ZXJ0b1Byb3RvUAGiAgNITFdiBnByb3RvMw=="));
+            "CgtUb3JyZS5wcm90bxIKQWVyb3B1ZXJ0byIzCglQaXN0YV9EZXMSEAoISWRf",
+            "YXZpb24YASABKAkSFAoMTmFtZV9kZXN0aW5vGAIgASgJIrYBCghSZXNwX0Rl",
+            "cxIdChVBdXRvcml6YWNpb25fZGVzcGVndWUYASABKAgSFgoOUGlzdGFfZGVz",
+            "cGVndWUYAiABKAUSFwoPQWx0dXJhX2Rlc3BlZ3VlGAMgASgFEhkKEVBvc2lj",
+            "aW9uX2Rlc3BlZ3VlGAQgASgFEhkKEUFudGVyaW9yX2Rlc3BlZ3VlGAUgASgJ",
+            "EhIKCklwX2Rlc3Rpbm8YBiABKAkSEAoISWRfYXZpb24YByABKAkiHAoIUGlz",
+            "dGFfQXQSEAoISWRfYXZpb24YASABKAkiqwEKB1Jlc3BfQXQSHwoXQXV0b3Jp",
+            "emFjaW9uX2F0ZXJyaXphamUYASABKAgSGAoQUGlzdGFfYXRlcnJpemFqZRgC",
+            "IAEoBRIZChFBbHR1cmFfYXRlcnJpemFqZRgDIAEoBRIbChNQb3NpY2lvbl9h",
+            "dGVycml6YWplGAQgASgFEhsKE0FudGVyaW9yX2F0ZXJyaXphamUYBSABKAkS",
+            "EAoISWRfYXZpb24YBiABKAkyTAoIRGVzcGVndWUSQAoPZW52aWFyX2Rlc3Bl",
+            "Z3VlEhUuQWVyb3B1ZXJ0by5QaXN0YV9EZXMaFC5BZXJvcHVlcnRvLlJlc3Bf",
+            "RGVzIgAyTgoKQXRlcnJpemFqZRJAChFlbnZpYXJfYXRlcnJpemFqZRIULkFl",
+            "cm9wdWVydG8uUGlzdGFfQXQaEy5BZXJvcHVlcnRvLlJlc3BfQXQiAEI2Chtp",
+            "by5ncnBjLmV4YW1wbGVzLkFlcm9wdWVydG9CD0Flcm9wdWVydG9Qcm90b1AB",
+            "ogIDSExXYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Pista_Des), global::Aeropuerto.Pista_Des.Parser, new[]{ "IdAvion" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Pista_Des), global::Aeropuerto.Pista_Des.Parser, new[]{ "IdAvion", "NameDestino" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Resp_Des), global::Aeropuerto.Resp_Des.Parser, new[]{ "AutorizacionDespegue", "PistaDespegue", "AlturaDespegue", "PosicionDespegue", "AnteriorDespegue", "IpDestino", "IdAvion" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Pista_At), global::Aeropuerto.Pista_At.Parser, new[]{ "IdAvion" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Resp_At), global::Aeropuerto.Resp_At.Parser, new[]{ "AutorizacionAterrizaje", "PistaAterrizaje", "AlturaAterrizaje", "PosicionAterrizaje", "AnteriorAterrizaje", "IdAvion" }, null, null, null)
@@ -78,6 +79,7 @@ namespace Aeropuerto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public Pista_Des(Pista_Des other) : this() {
       idAvion_ = other.idAvion_;
+      nameDestino_ = other.nameDestino_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -97,6 +99,17 @@ namespace Aeropuerto {
       }
     }
 
+    /// <summary>Field number for the "Name_destino" field.</summary>
+    public const int NameDestinoFieldNumber = 2;
+    private string nameDestino_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string NameDestino {
+      get { return nameDestino_; }
+      set {
+        nameDestino_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Pista_Des);
@@ -111,6 +124,7 @@ namespace Aeropuerto {
         return true;
       }
       if (IdAvion != other.IdAvion) return false;
+      if (NameDestino != other.NameDestino) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -118,6 +132,7 @@ namespace Aeropuerto {
     public override int GetHashCode() {
       int hash = 1;
       if (IdAvion.Length != 0) hash ^= IdAvion.GetHashCode();
+      if (NameDestino.Length != 0) hash ^= NameDestino.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -135,6 +150,10 @@ namespace Aeropuerto {
         output.WriteRawTag(10);
         output.WriteString(IdAvion);
       }
+      if (NameDestino.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(NameDestino);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -145,6 +164,9 @@ namespace Aeropuerto {
       int size = 0;
       if (IdAvion.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(IdAvion);
+      }
+      if (NameDestino.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(NameDestino);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -160,6 +182,9 @@ namespace Aeropuerto {
       if (other.IdAvion.Length != 0) {
         IdAvion = other.IdAvion;
       }
+      if (other.NameDestino.Length != 0) {
+        NameDestino = other.NameDestino;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -173,6 +198,10 @@ namespace Aeropuerto {
             break;
           case 10: {
             IdAvion = input.ReadString();
+            break;
+          }
+          case 18: {
+            NameDestino = input.ReadString();
             break;
           }
         }

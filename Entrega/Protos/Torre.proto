@@ -16,6 +16,7 @@ service Despegue{
 message Pista_Des{
 
   string Id_avion = 1;
+  string Name_destino = 2;
 
 }
 
