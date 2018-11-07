@@ -22,7 +22,7 @@ message Pista_Des{
 
 message Resp_Des{
   bool Autorizacion_despegue = 1;
-  int32 Pista_despegue = 2;
+  string Pista_despegue = 2;
   int32 Altura_despegue = 3;
   int32 Posicion_despegue = 4;
   string Anterior_despegue = 5;

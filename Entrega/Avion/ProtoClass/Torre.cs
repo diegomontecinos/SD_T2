@@ -27,7 +27,7 @@ namespace Aeropuerto {
             "CgtUb3JyZS5wcm90bxIKQWVyb3B1ZXJ0byIzCglQaXN0YV9EZXMSEAoISWRf",
             "YXZpb24YASABKAkSFAoMTmFtZV9kZXN0aW5vGAIgASgJIrYBCghSZXNwX0Rl",
             "cxIdChVBdXRvcml6YWNpb25fZGVzcGVndWUYASABKAgSFgoOUGlzdGFfZGVz",
-            "cGVndWUYAiABKAUSFwoPQWx0dXJhX2Rlc3BlZ3VlGAMgASgFEhkKEVBvc2lj",
+            "cGVndWUYAiABKAkSFwoPQWx0dXJhX2Rlc3BlZ3VlGAMgASgFEhkKEVBvc2lj",
             "aW9uX2Rlc3BlZ3VlGAQgASgFEhkKEUFudGVyaW9yX2Rlc3BlZ3VlGAUgASgJ",
             "EhIKCklwX2Rlc3Rpbm8YBiABKAkSEAoISWRfYXZpb24YByABKAkiHAoIUGlz",
             "dGFfQXQSEAoISWRfYXZpb24YASABKAkiqwEKB1Jlc3BfQXQSHwoXQXV0b3Jp",
@@ -263,12 +263,12 @@ namespace Aeropuerto {
 
     /// <summary>Field number for the "Pista_despegue" field.</summary>
     public const int PistaDespegueFieldNumber = 2;
-    private int pistaDespegue_;
+    private string pistaDespegue_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public int PistaDespegue {
+    public string PistaDespegue {
       get { return pistaDespegue_; }
       set {
-        pistaDespegue_ = value;
+        pistaDespegue_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -354,7 +354,7 @@ namespace Aeropuerto {
     public override int GetHashCode() {
       int hash = 1;
       if (AutorizacionDespegue != false) hash ^= AutorizacionDespegue.GetHashCode();
-      if (PistaDespegue != 0) hash ^= PistaDespegue.GetHashCode();
+      if (PistaDespegue.Length != 0) hash ^= PistaDespegue.GetHashCode();
       if (AlturaDespegue != 0) hash ^= AlturaDespegue.GetHashCode();
       if (PosicionDespegue != 0) hash ^= PosicionDespegue.GetHashCode();
       if (AnteriorDespegue.Length != 0) hash ^= AnteriorDespegue.GetHashCode();
@@ -377,9 +377,9 @@ namespace Aeropuerto {
         output.WriteRawTag(8);
         output.WriteBool(AutorizacionDespegue);
       }
-      if (PistaDespegue != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(PistaDespegue);
+      if (PistaDespegue.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PistaDespegue);
       }
       if (AlturaDespegue != 0) {
         output.WriteRawTag(24);
@@ -412,8 +412,8 @@ namespace Aeropuerto {
       if (AutorizacionDespegue != false) {
         size += 1 + 1;
       }
-      if (PistaDespegue != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PistaDespegue);
+      if (PistaDespegue.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PistaDespegue);
       }
       if (AlturaDespegue != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(AlturaDespegue);
@@ -444,7 +444,7 @@ namespace Aeropuerto {
       if (other.AutorizacionDespegue != false) {
         AutorizacionDespegue = other.AutorizacionDespegue;
       }
-      if (other.PistaDespegue != 0) {
+      if (other.PistaDespegue.Length != 0) {
         PistaDespegue = other.PistaDespegue;
       }
       if (other.AlturaDespegue != 0) {
@@ -477,8 +477,8 @@ namespace Aeropuerto {
             AutorizacionDespegue = input.ReadBool();
             break;
           }
-          case 16: {
-            PistaDespegue = input.ReadInt32();
+          case 18: {
+            PistaDespegue = input.ReadString();
             break;
           }
           case 24: {
