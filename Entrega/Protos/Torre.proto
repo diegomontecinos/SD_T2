@@ -50,3 +50,32 @@ message Resp_At{
   string Anterior_aterrizaje = 5;
   string Id_avion = 6;
 }
+
+//mensaje a pantallas
+service Pantalla{
+rpc enviar_info (Id_Pantalla) returns (Resp_Pantalla){}
+}
+
+message Id_Pantalla{
+  string Nombre_Pantalla=1;
+}
+
+message Resp_Pantalla{
+  string Salida1 = 1;
+  string A_Donde1 = 2;
+  string Pista_Salida1 = 3;
+  string Hora_Salida1 = 4;
+  string Salida2 = 5;
+  string A_Donde2 = 6;
+  string Pista_Salida2 = 7;
+  string Hora_Salida2 = 8;
+
+  string Llegda1 = 9;
+  string De_donde1 = 10;
+  string Pista_Llegada1 = 11;
+  string Hora_Llegada1 = 12;
+  string Llegda2 = 13;
+  string De_donde2 = 14;
+  string Pista_Llegada2 = 15;
+  string Hora_Llegada2 = 16;
+}
