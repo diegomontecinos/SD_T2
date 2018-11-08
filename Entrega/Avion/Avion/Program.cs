@@ -37,6 +37,25 @@ namespace Avion
             Console.WriteLine("Ip: " + reply.IpDestino);
             Console.WriteLine("Id: " + reply.IdAvion);
 
+            Resp_Cons second_reply = null;
+
+            if (reply.AutorizacionDespegue == false)
+            {
+                second_reply = cliente.confirmar_despegue(new Cons_Des { IdAvion = user, NameDestino = destino });
+                while (second_reply.AutorizacionDespegue == false)
+                {
+                    second_reply = cliente.confirmar_despegue(new Cons_Des { IdAvion = user, NameDestino = destino });
+                }
+            }
+
+            Console.WriteLine("Autorizacion: " + second_reply.AutorizacionDespegue);
+            Console.WriteLine("Pista: " + second_reply.PistaDespegue);
+            Console.WriteLine("Altura: " + second_reply.AlturaDespegue);
+            Console.WriteLine("Pos: " + second_reply.PosicionDespegue);
+            Console.WriteLine("Ant: " + second_reply.AnteriorDespegue);
+            Console.WriteLine("Ip: " + second_reply.IpDestino);
+            Console.WriteLine("Id: " + second_reply.IdAvion);
+
             channel.ShutdownAsync().Wait();
             Console.WriteLine("presione cualquier tecla para salir: ");
             Console.ReadKey();
