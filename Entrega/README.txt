@@ -10,7 +10,7 @@ Directorio = ./SD_T2/Entrega/Avion
 Utilizando VisualStudio 2017:
 	-Abrir el proyecto Avion.sln
 	-Compilar la solucion
-	-Ejejcutar la solucion
+	-Ejecutar la solucion
 ___________________________________________
 *Compilacion Python(Torres de control):
 
