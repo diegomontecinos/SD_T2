@@ -24,7 +24,7 @@ ____________________________________________
 
 Directorio = ./SD_T2/Entrega/Node
 
-Desde el directorio abrir una termianl y ejecutar node .\Pantalla.js 
+Desde el directorio abrir una terminal y ejecutar node .\Pantalla.js 
 ____________________________________________
 
 Compilacion Protos
@@ -44,13 +44,13 @@ python -m grpc_tools.protoc -I../Protos --python_out=. --grpc_python_out=. ../Pr
 Node
 No lo necesita.
 
-
+PD: ya está todo compilado
 
 
 Las Instrucciones antes mencionadas fueron porbadas en Windows 10 64b, en otros S.O se debe utilizar comandos equivalentes.
 
 
-Una vez que el programa se encuentre en ejecición:
+Una vez que el programa se encuentre en ejecución:
 	la torre de control le pedirá que ingrese los siguientes datos: 
 		el nombre del aeropuerto, la ip del aeropuerto, la cantidad de pistas del aeropuero, 
 		para esta implementación se considera que la cantidad de pistas de aterrizaje es igual a las pistas de despegue.
@@ -59,3 +59,5 @@ Una vez que el programa se encuentre en ejecición:
 	los aviones le pedirá que ingrese los siguientes datos:
 		la IP de la torre de control inicial, la ID del avión, el cual correspode al número de avión,
 		Luego le indicara el estado del despegue.
+	
+	
