@@ -29,40 +29,41 @@ namespace Aeropuerto {
             "cxIdChVBdXRvcml6YWNpb25fZGVzcGVndWUYASABKAgSFgoOUGlzdGFfZGVz",
             "cGVndWUYAiABKAkSFwoPQWx0dXJhX2Rlc3BlZ3VlGAMgASgFEhkKEVBvc2lj",
             "aW9uX2Rlc3BlZ3VlGAQgASgFEhkKEUFudGVyaW9yX2Rlc3BlZ3VlGAUgASgJ",
-            "EhIKCklwX2Rlc3Rpbm8YBiABKAkSEAoISWRfYXZpb24YByABKAkiMgoIQ29u",
+            "EhIKCklwX2Rlc3Rpbm8YBiABKAkSEAoISWRfYXZpb24YByABKAkiYQoIQ29u",
             "c19EZXMSEAoISWRfYXZpb24YASABKAkSFAoMTmFtZV9kZXN0aW5vGAIgASgJ",
-            "IrcBCglSZXNwX0NvbnMSHQoVQXV0b3JpemFjaW9uX2Rlc3BlZ3VlGAEgASgI",
-            "EhYKDlBpc3RhX2Rlc3BlZ3VlGAIgASgJEhcKD0FsdHVyYV9kZXNwZWd1ZRgD",
-            "IAEoBRIZChFQb3NpY2lvbl9kZXNwZWd1ZRgEIAEoBRIZChFBbnRlcmlvcl9k",
-            "ZXNwZWd1ZRgFIAEoCRISCgpJcF9kZXN0aW5vGAYgASgJEhAKCElkX2F2aW9u",
-            "GAcgASgJIhwKCFBpc3RhX0F0EhAKCElkX2F2aW9uGAEgASgJIqsBCgdSZXNw",
-            "X0F0Eh8KF0F1dG9yaXphY2lvbl9hdGVycml6YWplGAEgASgIEhgKEFBpc3Rh",
-            "X2F0ZXJyaXphamUYAiABKAUSGQoRQWx0dXJhX2F0ZXJyaXphamUYAyABKAUS",
-            "GwoTUG9zaWNpb25fYXRlcnJpemFqZRgEIAEoBRIbChNBbnRlcmlvcl9hdGVy",
-            "cml6YWplGAUgASgJEhAKCElkX2F2aW9uGAYgASgJIiYKC0lkX1BhbnRhbGxh",
-            "EhcKD05vbWJyZV9QYW50YWxsYRgBIAEoCSLVAgoNUmVzcF9QYW50YWxsYRIP",
-            "CgdTYWxpZGExGAEgASgJEhAKCEFfRG9uZGUxGAIgASgJEhUKDVBpc3RhX1Nh",
-            "bGlkYTEYAyABKAkSFAoMSG9yYV9TYWxpZGExGAQgASgJEg8KB1NhbGlkYTIY",
-            "BSABKAkSEAoIQV9Eb25kZTIYBiABKAkSFQoNUGlzdGFfU2FsaWRhMhgHIAEo",
-            "CRIUCgxIb3JhX1NhbGlkYTIYCCABKAkSDwoHTGxlZ2RhMRgJIAEoCRIRCglE",
-            "ZV9kb25kZTEYCiABKAkSFgoOUGlzdGFfTGxlZ2FkYTEYCyABKAkSFQoNSG9y",
-            "YV9MbGVnYWRhMRgMIAEoCRIPCgdMbGVnZGEyGA0gASgJEhEKCURlX2RvbmRl",
-            "MhgOIAEoCRIWCg5QaXN0YV9MbGVnYWRhMhgPIAEoCRIVCg1Ib3JhX0xsZWdh",
-            "ZGEyGBAgASgJMp8CCg9TZXJ2X0Flcm9wdWVydG8SQAoPZW52aWFyX2Rlc3Bl",
-            "Z3VlEhUuQWVyb3B1ZXJ0by5QaXN0YV9EZXMaFC5BZXJvcHVlcnRvLlJlc3Bf",
-            "RGVzIgASQwoSY29uZmlybWFyX2Rlc3BlZ3VlEhQuQWVyb3B1ZXJ0by5Db25z",
-            "X0RlcxoVLkFlcm9wdWVydG8uUmVzcF9Db25zIgASQAoRZW52aWFyX2F0ZXJy",
-            "aXphamUSFC5BZXJvcHVlcnRvLlBpc3RhX0F0GhMuQWVyb3B1ZXJ0by5SZXNw",
-            "X0F0IgASQwoLZW52aWFyX2luZm8SFy5BZXJvcHVlcnRvLklkX1BhbnRhbGxh",
-            "GhkuQWVyb3B1ZXJ0by5SZXNwX1BhbnRhbGxhIgBCNgobaW8uZ3JwYy5leGFt",
-            "cGxlcy5BZXJvcHVlcnRvQg9BZXJvcHVlcnRvUHJvdG9QAaICA0hMV2IGcHJv",
-            "dG8z"));
+            "EhQKDFBpc3RhX2VzcGVyYRgDIAEoCRIXCg9Qb3NpY2lvbl9lc3BlcmEYBCAB",
+            "KAUitwEKCVJlc3BfQ29ucxIdChVBdXRvcml6YWNpb25fZGVzcGVndWUYASAB",
+            "KAgSFgoOUGlzdGFfZGVzcGVndWUYAiABKAkSFwoPQWx0dXJhX2Rlc3BlZ3Vl",
+            "GAMgASgFEhkKEVBvc2ljaW9uX2Rlc3BlZ3VlGAQgASgFEhkKEUFudGVyaW9y",
+            "X2Rlc3BlZ3VlGAUgASgJEhIKCklwX2Rlc3Rpbm8YBiABKAkSEAoISWRfYXZp",
+            "b24YByABKAkiHAoIUGlzdGFfQXQSEAoISWRfYXZpb24YASABKAkiqwEKB1Jl",
+            "c3BfQXQSHwoXQXV0b3JpemFjaW9uX2F0ZXJyaXphamUYASABKAgSGAoQUGlz",
+            "dGFfYXRlcnJpemFqZRgCIAEoBRIZChFBbHR1cmFfYXRlcnJpemFqZRgDIAEo",
+            "BRIbChNQb3NpY2lvbl9hdGVycml6YWplGAQgASgFEhsKE0FudGVyaW9yX2F0",
+            "ZXJyaXphamUYBSABKAkSEAoISWRfYXZpb24YBiABKAkiJgoLSWRfUGFudGFs",
+            "bGESFwoPTm9tYnJlX1BhbnRhbGxhGAEgASgJItUCCg1SZXNwX1BhbnRhbGxh",
+            "Eg8KB1NhbGlkYTEYASABKAkSEAoIQV9Eb25kZTEYAiABKAkSFQoNUGlzdGFf",
+            "U2FsaWRhMRgDIAEoCRIUCgxIb3JhX1NhbGlkYTEYBCABKAkSDwoHU2FsaWRh",
+            "MhgFIAEoCRIQCghBX0RvbmRlMhgGIAEoCRIVCg1QaXN0YV9TYWxpZGEyGAcg",
+            "ASgJEhQKDEhvcmFfU2FsaWRhMhgIIAEoCRIPCgdMbGVnZGExGAkgASgJEhEK",
+            "CURlX2RvbmRlMRgKIAEoCRIWCg5QaXN0YV9MbGVnYWRhMRgLIAEoCRIVCg1I",
+            "b3JhX0xsZWdhZGExGAwgASgJEg8KB0xsZWdkYTIYDSABKAkSEQoJRGVfZG9u",
+            "ZGUyGA4gASgJEhYKDlBpc3RhX0xsZWdhZGEyGA8gASgJEhUKDUhvcmFfTGxl",
+            "Z2FkYTIYECABKAkynwIKD1NlcnZfQWVyb3B1ZXJ0bxJACg9lbnZpYXJfZGVz",
+            "cGVndWUSFS5BZXJvcHVlcnRvLlBpc3RhX0RlcxoULkFlcm9wdWVydG8uUmVz",
+            "cF9EZXMiABJDChJjb25maXJtYXJfZGVzcGVndWUSFC5BZXJvcHVlcnRvLkNv",
+            "bnNfRGVzGhUuQWVyb3B1ZXJ0by5SZXNwX0NvbnMiABJAChFlbnZpYXJfYXRl",
+            "cnJpemFqZRIULkFlcm9wdWVydG8uUGlzdGFfQXQaEy5BZXJvcHVlcnRvLlJl",
+            "c3BfQXQiABJDCgtlbnZpYXJfaW5mbxIXLkFlcm9wdWVydG8uSWRfUGFudGFs",
+            "bGEaGS5BZXJvcHVlcnRvLlJlc3BfUGFudGFsbGEiAEI2Chtpby5ncnBjLmV4",
+            "YW1wbGVzLkFlcm9wdWVydG9CD0Flcm9wdWVydG9Qcm90b1ABogIDSExXYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Pista_Des), global::Aeropuerto.Pista_Des.Parser, new[]{ "IdAvion", "NameDestino" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Resp_Des), global::Aeropuerto.Resp_Des.Parser, new[]{ "AutorizacionDespegue", "PistaDespegue", "AlturaDespegue", "PosicionDespegue", "AnteriorDespegue", "IpDestino", "IdAvion" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Cons_Des), global::Aeropuerto.Cons_Des.Parser, new[]{ "IdAvion", "NameDestino" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Cons_Des), global::Aeropuerto.Cons_Des.Parser, new[]{ "IdAvion", "NameDestino", "PistaEspera", "PosicionEspera" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Resp_Cons), global::Aeropuerto.Resp_Cons.Parser, new[]{ "AutorizacionDespegue", "PistaDespegue", "AlturaDespegue", "PosicionDespegue", "AnteriorDespegue", "IpDestino", "IdAvion" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Pista_At), global::Aeropuerto.Pista_At.Parser, new[]{ "IdAvion" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Resp_At), global::Aeropuerto.Resp_At.Parser, new[]{ "AutorizacionAterrizaje", "PistaAterrizaje", "AlturaAterrizaje", "PosicionAterrizaje", "AnteriorAterrizaje", "IdAvion" }, null, null, null),
@@ -555,6 +556,8 @@ namespace Aeropuerto {
     public Cons_Des(Cons_Des other) : this() {
       idAvion_ = other.idAvion_;
       nameDestino_ = other.nameDestino_;
+      pistaEspera_ = other.pistaEspera_;
+      posicionEspera_ = other.posicionEspera_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -585,6 +588,28 @@ namespace Aeropuerto {
       }
     }
 
+    /// <summary>Field number for the "Pista_espera" field.</summary>
+    public const int PistaEsperaFieldNumber = 3;
+    private string pistaEspera_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PistaEspera {
+      get { return pistaEspera_; }
+      set {
+        pistaEspera_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Posicion_espera" field.</summary>
+    public const int PosicionEsperaFieldNumber = 4;
+    private int posicionEspera_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int PosicionEspera {
+      get { return posicionEspera_; }
+      set {
+        posicionEspera_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Cons_Des);
@@ -600,6 +625,8 @@ namespace Aeropuerto {
       }
       if (IdAvion != other.IdAvion) return false;
       if (NameDestino != other.NameDestino) return false;
+      if (PistaEspera != other.PistaEspera) return false;
+      if (PosicionEspera != other.PosicionEspera) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -608,6 +635,8 @@ namespace Aeropuerto {
       int hash = 1;
       if (IdAvion.Length != 0) hash ^= IdAvion.GetHashCode();
       if (NameDestino.Length != 0) hash ^= NameDestino.GetHashCode();
+      if (PistaEspera.Length != 0) hash ^= PistaEspera.GetHashCode();
+      if (PosicionEspera != 0) hash ^= PosicionEspera.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -629,6 +658,14 @@ namespace Aeropuerto {
         output.WriteRawTag(18);
         output.WriteString(NameDestino);
       }
+      if (PistaEspera.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(PistaEspera);
+      }
+      if (PosicionEspera != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(PosicionEspera);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -642,6 +679,12 @@ namespace Aeropuerto {
       }
       if (NameDestino.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(NameDestino);
+      }
+      if (PistaEspera.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PistaEspera);
+      }
+      if (PosicionEspera != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PosicionEspera);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -660,6 +703,12 @@ namespace Aeropuerto {
       if (other.NameDestino.Length != 0) {
         NameDestino = other.NameDestino;
       }
+      if (other.PistaEspera.Length != 0) {
+        PistaEspera = other.PistaEspera;
+      }
+      if (other.PosicionEspera != 0) {
+        PosicionEspera = other.PosicionEspera;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -677,6 +726,14 @@ namespace Aeropuerto {
           }
           case 18: {
             NameDestino = input.ReadString();
+            break;
+          }
+          case 26: {
+            PistaEspera = input.ReadString();
+            break;
+          }
+          case 32: {
+            PosicionEspera = input.ReadInt32();
             break;
           }
         }

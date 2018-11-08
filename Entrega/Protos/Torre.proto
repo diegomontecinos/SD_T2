@@ -46,6 +46,8 @@ message Cons_Des {
 
   string Id_avion = 1;
   string Name_destino = 2;
+  string Pista_espera = 3;
+  int32 Posicion_espera = 4;
 }
 
 message Resp_Cons {

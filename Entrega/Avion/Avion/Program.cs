@@ -13,6 +13,7 @@ namespace Avion
             Console.WriteLine("Ingrese Ip de la torre de control, si ingresa el valor 0 se utilizara la IP por defecto 127.0.0.1 para conecciones avion-torre en el mismo equipo: ");
             string temp = Console.ReadLine();
 
+
             if (temp != "0")
             {
                 Ip_torre_despegue = temp;
@@ -26,6 +27,10 @@ namespace Avion
             string user = Console.ReadLine();
             Console.WriteLine("Ingrese aeropuerto de destino: ");
             String destino = Console.ReadLine();
+            Console.WriteLine("Pasando por el Gate");
+            Console.WriteLine("Todos los pasajeros a bordo y combustible cargado.");
+
+            Console.WriteLine("Pidiendo indicaciones para despegar.");
 
             var reply = cliente.enviar_despegue(new Pista_Des {IdAvion = user, NameDestino = destino});
 
@@ -37,14 +42,34 @@ namespace Avion
             Console.WriteLine("Ip: " + reply.IpDestino);
             Console.WriteLine("Id: " + reply.IdAvion);
 
+            if (reply.AutorizacionDespegue = true)
+            {
+                Console.WriteLine("despegando de la pista {0},  volando a una altura de {},", reply.PistaDespegue, reply.AlturaDespegue);
+            }
+
             Resp_Cons second_reply = null;
 
             if (reply.AutorizacionDespegue == false)
             {
-                second_reply = cliente.confirmar_despegue(new Cons_Des { IdAvion = user, NameDestino = destino });
+                Console.WriteLine("Lamenatamos informar que todas las pistas se encuentran ocupadas, salremos luego del avion {0}, hay {1} aviones antes nuestro.", second_reply.AnteriorDespegue, second_reply.PosicionDespegue);
+                second_reply = cliente.confirmar_despegue(new Cons_Des { IdAvion = user, NameDestino = destino, PistaEspera = reply.PistaDespegue, PosicionEspera = reply.PosicionDespegue });
+
+                string Pista_espera = second_reply.PistaDespegue;
+                int Posicion_espera = second_reply.PosicionDespegue;
+
                 while (second_reply.AutorizacionDespegue == false)
                 {
-                    second_reply = cliente.confirmar_despegue(new Cons_Des { IdAvion = user, NameDestino = destino });
+                    
+                    second_reply = cliente.confirmar_despegue(new Cons_Des { IdAvion = user, NameDestino = destino, PistaEspera =Pista_espera, PosicionEspera = Posicion_espera });
+
+                    if ( second_reply.PosicionDespegue = false)
+                    {
+                        Console.WriteLine("Aun hay {0} aviones esperando para despegar.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Procederemos a despegar.");
+                    }
                 }
             }
 
