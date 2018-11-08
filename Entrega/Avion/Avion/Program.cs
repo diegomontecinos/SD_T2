@@ -9,9 +9,19 @@ namespace Avion
     {
         public static void Main(string[] args)
         {
-            Channel channel = new Channel("127.0.0.1:50051", ChannelCredentials.Insecure);
+            string Ip_torre_despegue = "127.0.0.1";
+            Console.WriteLine("Ingrese Ip de la torre de control, si ingresa el valor 0 se utilizara la IP por defecto 127.0.0.1 para conecciones avion-torre en el mismo equipo: ");
+            string temp = Console.ReadLine();
 
-            var cliente = new Despegue.DespegueClient(channel);
+            if (temp != "0")
+            {
+                Ip_torre_despegue = temp;
+            }
+
+            Channel channel = new Channel(string.Concat(Ip_torre_despegue,":50051"), ChannelCredentials.Insecure);
+            //crear una variable de objeto cliente - guarda las respuestas
+            var cliente = new Serv_Aeropuerto.Serv_AeropuertoClient(channel);
+
             Console.WriteLine("Ingrese la ID del avion: ");
             string user = Console.ReadLine();
             Console.WriteLine("Ingrese aeropuerto de destino: ");

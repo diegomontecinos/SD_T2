@@ -7,10 +7,18 @@ option objc_class_prefix = "HLW";
 
 package Aeropuerto;
 
-//asignacion pista de despegue
+service Serv_Aeropuerto{
 
-service Despegue{
+//solicitud de despegue
   rpc enviar_despegue (Pista_Des) returns (Resp_Des){}
+
+//asignacion pista de aterrizaje
+  rpc enviar_aterrizaje (Pista_At) returns (Resp_At){}
+
+//Enviar info pantallas
+  rpc enviar_info (Id_Pantalla) returns (Resp_Pantalla){}
+
+
 }
 
 message Pista_Des{
@@ -31,11 +39,6 @@ message Resp_Des{
   }
 
 
-//asignacion pista de aterrizaje
-service Aterrizaje{
-  rpc enviar_aterrizaje (Pista_At) returns (Resp_At){}
-}
-
 message Pista_At{
   string Id_avion = 1;
 
@@ -51,10 +54,7 @@ message Resp_At{
   string Id_avion = 6;
 }
 
-//mensaje a pantallas
-service Pantalla{
-rpc enviar_info (Id_Pantalla) returns (Resp_Pantalla){}
-}
+
 
 message Id_Pantalla{
   string Nombre_Pantalla=1;

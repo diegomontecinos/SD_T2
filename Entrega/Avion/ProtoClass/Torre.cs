@@ -34,19 +34,31 @@ namespace Aeropuerto {
             "emFjaW9uX2F0ZXJyaXphamUYASABKAgSGAoQUGlzdGFfYXRlcnJpemFqZRgC",
             "IAEoBRIZChFBbHR1cmFfYXRlcnJpemFqZRgDIAEoBRIbChNQb3NpY2lvbl9h",
             "dGVycml6YWplGAQgASgFEhsKE0FudGVyaW9yX2F0ZXJyaXphamUYBSABKAkS",
-            "EAoISWRfYXZpb24YBiABKAkyTAoIRGVzcGVndWUSQAoPZW52aWFyX2Rlc3Bl",
-            "Z3VlEhUuQWVyb3B1ZXJ0by5QaXN0YV9EZXMaFC5BZXJvcHVlcnRvLlJlc3Bf",
-            "RGVzIgAyTgoKQXRlcnJpemFqZRJAChFlbnZpYXJfYXRlcnJpemFqZRIULkFl",
-            "cm9wdWVydG8uUGlzdGFfQXQaEy5BZXJvcHVlcnRvLlJlc3BfQXQiAEI2Chtp",
-            "by5ncnBjLmV4YW1wbGVzLkFlcm9wdWVydG9CD0Flcm9wdWVydG9Qcm90b1AB",
-            "ogIDSExXYgZwcm90bzM="));
+            "EAoISWRfYXZpb24YBiABKAkiJgoLSWRfUGFudGFsbGESFwoPTm9tYnJlX1Bh",
+            "bnRhbGxhGAEgASgJItUCCg1SZXNwX1BhbnRhbGxhEg8KB1NhbGlkYTEYASAB",
+            "KAkSEAoIQV9Eb25kZTEYAiABKAkSFQoNUGlzdGFfU2FsaWRhMRgDIAEoCRIU",
+            "CgxIb3JhX1NhbGlkYTEYBCABKAkSDwoHU2FsaWRhMhgFIAEoCRIQCghBX0Rv",
+            "bmRlMhgGIAEoCRIVCg1QaXN0YV9TYWxpZGEyGAcgASgJEhQKDEhvcmFfU2Fs",
+            "aWRhMhgIIAEoCRIPCgdMbGVnZGExGAkgASgJEhEKCURlX2RvbmRlMRgKIAEo",
+            "CRIWCg5QaXN0YV9MbGVnYWRhMRgLIAEoCRIVCg1Ib3JhX0xsZWdhZGExGAwg",
+            "ASgJEg8KB0xsZWdkYTIYDSABKAkSEQoJRGVfZG9uZGUyGA4gASgJEhYKDlBp",
+            "c3RhX0xsZWdhZGEyGA8gASgJEhUKDUhvcmFfTGxlZ2FkYTIYECABKAky2gEK",
+            "D1NlcnZfQWVyb3B1ZXJ0bxJACg9lbnZpYXJfZGVzcGVndWUSFS5BZXJvcHVl",
+            "cnRvLlBpc3RhX0RlcxoULkFlcm9wdWVydG8uUmVzcF9EZXMiABJAChFlbnZp",
+            "YXJfYXRlcnJpemFqZRIULkFlcm9wdWVydG8uUGlzdGFfQXQaEy5BZXJvcHVl",
+            "cnRvLlJlc3BfQXQiABJDCgtlbnZpYXJfaW5mbxIXLkFlcm9wdWVydG8uSWRf",
+            "UGFudGFsbGEaGS5BZXJvcHVlcnRvLlJlc3BfUGFudGFsbGEiAEI2Chtpby5n",
+            "cnBjLmV4YW1wbGVzLkFlcm9wdWVydG9CD0Flcm9wdWVydG9Qcm90b1ABogID",
+            "SExXYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Pista_Des), global::Aeropuerto.Pista_Des.Parser, new[]{ "IdAvion", "NameDestino" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Resp_Des), global::Aeropuerto.Resp_Des.Parser, new[]{ "AutorizacionDespegue", "PistaDespegue", "AlturaDespegue", "PosicionDespegue", "AnteriorDespegue", "IpDestino", "IdAvion" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Pista_At), global::Aeropuerto.Pista_At.Parser, new[]{ "IdAvion" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Resp_At), global::Aeropuerto.Resp_At.Parser, new[]{ "AutorizacionAterrizaje", "PistaAterrizaje", "AlturaAterrizaje", "PosicionAterrizaje", "AnteriorAterrizaje", "IdAvion" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Resp_At), global::Aeropuerto.Resp_At.Parser, new[]{ "AutorizacionAterrizaje", "PistaAterrizaje", "AlturaAterrizaje", "PosicionAterrizaje", "AnteriorAterrizaje", "IdAvion" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Id_Pantalla), global::Aeropuerto.Id_Pantalla.Parser, new[]{ "NombrePantalla" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Resp_Pantalla), global::Aeropuerto.Resp_Pantalla.Parser, new[]{ "Salida1", "ADonde1", "PistaSalida1", "HoraSalida1", "Salida2", "ADonde2", "PistaSalida2", "HoraSalida2", "Llegda1", "DeDonde1", "PistaLlegada1", "HoraLlegada1", "Llegda2", "DeDonde2", "PistaLlegada2", "HoraLlegada2" }, null, null, null)
           }));
     }
     #endregion
@@ -897,6 +909,684 @@ namespace Aeropuerto {
           }
           case 50: {
             IdAvion = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class Id_Pantalla : pb::IMessage<Id_Pantalla> {
+    private static readonly pb::MessageParser<Id_Pantalla> _parser = new pb::MessageParser<Id_Pantalla>(() => new Id_Pantalla());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Id_Pantalla> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Aeropuerto.TorreReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Id_Pantalla() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Id_Pantalla(Id_Pantalla other) : this() {
+      nombrePantalla_ = other.nombrePantalla_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Id_Pantalla Clone() {
+      return new Id_Pantalla(this);
+    }
+
+    /// <summary>Field number for the "Nombre_Pantalla" field.</summary>
+    public const int NombrePantallaFieldNumber = 1;
+    private string nombrePantalla_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string NombrePantalla {
+      get { return nombrePantalla_; }
+      set {
+        nombrePantalla_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Id_Pantalla);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Id_Pantalla other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (NombrePantalla != other.NombrePantalla) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (NombrePantalla.Length != 0) hash ^= NombrePantalla.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (NombrePantalla.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(NombrePantalla);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (NombrePantalla.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(NombrePantalla);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Id_Pantalla other) {
+      if (other == null) {
+        return;
+      }
+      if (other.NombrePantalla.Length != 0) {
+        NombrePantalla = other.NombrePantalla;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            NombrePantalla = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class Resp_Pantalla : pb::IMessage<Resp_Pantalla> {
+    private static readonly pb::MessageParser<Resp_Pantalla> _parser = new pb::MessageParser<Resp_Pantalla>(() => new Resp_Pantalla());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Resp_Pantalla> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Aeropuerto.TorreReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Resp_Pantalla() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Resp_Pantalla(Resp_Pantalla other) : this() {
+      salida1_ = other.salida1_;
+      aDonde1_ = other.aDonde1_;
+      pistaSalida1_ = other.pistaSalida1_;
+      horaSalida1_ = other.horaSalida1_;
+      salida2_ = other.salida2_;
+      aDonde2_ = other.aDonde2_;
+      pistaSalida2_ = other.pistaSalida2_;
+      horaSalida2_ = other.horaSalida2_;
+      llegda1_ = other.llegda1_;
+      deDonde1_ = other.deDonde1_;
+      pistaLlegada1_ = other.pistaLlegada1_;
+      horaLlegada1_ = other.horaLlegada1_;
+      llegda2_ = other.llegda2_;
+      deDonde2_ = other.deDonde2_;
+      pistaLlegada2_ = other.pistaLlegada2_;
+      horaLlegada2_ = other.horaLlegada2_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Resp_Pantalla Clone() {
+      return new Resp_Pantalla(this);
+    }
+
+    /// <summary>Field number for the "Salida1" field.</summary>
+    public const int Salida1FieldNumber = 1;
+    private string salida1_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Salida1 {
+      get { return salida1_; }
+      set {
+        salida1_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "A_Donde1" field.</summary>
+    public const int ADonde1FieldNumber = 2;
+    private string aDonde1_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ADonde1 {
+      get { return aDonde1_; }
+      set {
+        aDonde1_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Pista_Salida1" field.</summary>
+    public const int PistaSalida1FieldNumber = 3;
+    private string pistaSalida1_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PistaSalida1 {
+      get { return pistaSalida1_; }
+      set {
+        pistaSalida1_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Hora_Salida1" field.</summary>
+    public const int HoraSalida1FieldNumber = 4;
+    private string horaSalida1_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string HoraSalida1 {
+      get { return horaSalida1_; }
+      set {
+        horaSalida1_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Salida2" field.</summary>
+    public const int Salida2FieldNumber = 5;
+    private string salida2_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Salida2 {
+      get { return salida2_; }
+      set {
+        salida2_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "A_Donde2" field.</summary>
+    public const int ADonde2FieldNumber = 6;
+    private string aDonde2_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ADonde2 {
+      get { return aDonde2_; }
+      set {
+        aDonde2_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Pista_Salida2" field.</summary>
+    public const int PistaSalida2FieldNumber = 7;
+    private string pistaSalida2_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PistaSalida2 {
+      get { return pistaSalida2_; }
+      set {
+        pistaSalida2_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Hora_Salida2" field.</summary>
+    public const int HoraSalida2FieldNumber = 8;
+    private string horaSalida2_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string HoraSalida2 {
+      get { return horaSalida2_; }
+      set {
+        horaSalida2_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Llegda1" field.</summary>
+    public const int Llegda1FieldNumber = 9;
+    private string llegda1_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Llegda1 {
+      get { return llegda1_; }
+      set {
+        llegda1_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "De_donde1" field.</summary>
+    public const int DeDonde1FieldNumber = 10;
+    private string deDonde1_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string DeDonde1 {
+      get { return deDonde1_; }
+      set {
+        deDonde1_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Pista_Llegada1" field.</summary>
+    public const int PistaLlegada1FieldNumber = 11;
+    private string pistaLlegada1_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PistaLlegada1 {
+      get { return pistaLlegada1_; }
+      set {
+        pistaLlegada1_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Hora_Llegada1" field.</summary>
+    public const int HoraLlegada1FieldNumber = 12;
+    private string horaLlegada1_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string HoraLlegada1 {
+      get { return horaLlegada1_; }
+      set {
+        horaLlegada1_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Llegda2" field.</summary>
+    public const int Llegda2FieldNumber = 13;
+    private string llegda2_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Llegda2 {
+      get { return llegda2_; }
+      set {
+        llegda2_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "De_donde2" field.</summary>
+    public const int DeDonde2FieldNumber = 14;
+    private string deDonde2_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string DeDonde2 {
+      get { return deDonde2_; }
+      set {
+        deDonde2_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Pista_Llegada2" field.</summary>
+    public const int PistaLlegada2FieldNumber = 15;
+    private string pistaLlegada2_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PistaLlegada2 {
+      get { return pistaLlegada2_; }
+      set {
+        pistaLlegada2_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Hora_Llegada2" field.</summary>
+    public const int HoraLlegada2FieldNumber = 16;
+    private string horaLlegada2_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string HoraLlegada2 {
+      get { return horaLlegada2_; }
+      set {
+        horaLlegada2_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Resp_Pantalla);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Resp_Pantalla other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Salida1 != other.Salida1) return false;
+      if (ADonde1 != other.ADonde1) return false;
+      if (PistaSalida1 != other.PistaSalida1) return false;
+      if (HoraSalida1 != other.HoraSalida1) return false;
+      if (Salida2 != other.Salida2) return false;
+      if (ADonde2 != other.ADonde2) return false;
+      if (PistaSalida2 != other.PistaSalida2) return false;
+      if (HoraSalida2 != other.HoraSalida2) return false;
+      if (Llegda1 != other.Llegda1) return false;
+      if (DeDonde1 != other.DeDonde1) return false;
+      if (PistaLlegada1 != other.PistaLlegada1) return false;
+      if (HoraLlegada1 != other.HoraLlegada1) return false;
+      if (Llegda2 != other.Llegda2) return false;
+      if (DeDonde2 != other.DeDonde2) return false;
+      if (PistaLlegada2 != other.PistaLlegada2) return false;
+      if (HoraLlegada2 != other.HoraLlegada2) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Salida1.Length != 0) hash ^= Salida1.GetHashCode();
+      if (ADonde1.Length != 0) hash ^= ADonde1.GetHashCode();
+      if (PistaSalida1.Length != 0) hash ^= PistaSalida1.GetHashCode();
+      if (HoraSalida1.Length != 0) hash ^= HoraSalida1.GetHashCode();
+      if (Salida2.Length != 0) hash ^= Salida2.GetHashCode();
+      if (ADonde2.Length != 0) hash ^= ADonde2.GetHashCode();
+      if (PistaSalida2.Length != 0) hash ^= PistaSalida2.GetHashCode();
+      if (HoraSalida2.Length != 0) hash ^= HoraSalida2.GetHashCode();
+      if (Llegda1.Length != 0) hash ^= Llegda1.GetHashCode();
+      if (DeDonde1.Length != 0) hash ^= DeDonde1.GetHashCode();
+      if (PistaLlegada1.Length != 0) hash ^= PistaLlegada1.GetHashCode();
+      if (HoraLlegada1.Length != 0) hash ^= HoraLlegada1.GetHashCode();
+      if (Llegda2.Length != 0) hash ^= Llegda2.GetHashCode();
+      if (DeDonde2.Length != 0) hash ^= DeDonde2.GetHashCode();
+      if (PistaLlegada2.Length != 0) hash ^= PistaLlegada2.GetHashCode();
+      if (HoraLlegada2.Length != 0) hash ^= HoraLlegada2.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Salida1.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Salida1);
+      }
+      if (ADonde1.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(ADonde1);
+      }
+      if (PistaSalida1.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(PistaSalida1);
+      }
+      if (HoraSalida1.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(HoraSalida1);
+      }
+      if (Salida2.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(Salida2);
+      }
+      if (ADonde2.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(ADonde2);
+      }
+      if (PistaSalida2.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(PistaSalida2);
+      }
+      if (HoraSalida2.Length != 0) {
+        output.WriteRawTag(66);
+        output.WriteString(HoraSalida2);
+      }
+      if (Llegda1.Length != 0) {
+        output.WriteRawTag(74);
+        output.WriteString(Llegda1);
+      }
+      if (DeDonde1.Length != 0) {
+        output.WriteRawTag(82);
+        output.WriteString(DeDonde1);
+      }
+      if (PistaLlegada1.Length != 0) {
+        output.WriteRawTag(90);
+        output.WriteString(PistaLlegada1);
+      }
+      if (HoraLlegada1.Length != 0) {
+        output.WriteRawTag(98);
+        output.WriteString(HoraLlegada1);
+      }
+      if (Llegda2.Length != 0) {
+        output.WriteRawTag(106);
+        output.WriteString(Llegda2);
+      }
+      if (DeDonde2.Length != 0) {
+        output.WriteRawTag(114);
+        output.WriteString(DeDonde2);
+      }
+      if (PistaLlegada2.Length != 0) {
+        output.WriteRawTag(122);
+        output.WriteString(PistaLlegada2);
+      }
+      if (HoraLlegada2.Length != 0) {
+        output.WriteRawTag(130, 1);
+        output.WriteString(HoraLlegada2);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Salida1.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Salida1);
+      }
+      if (ADonde1.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ADonde1);
+      }
+      if (PistaSalida1.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PistaSalida1);
+      }
+      if (HoraSalida1.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(HoraSalida1);
+      }
+      if (Salida2.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Salida2);
+      }
+      if (ADonde2.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ADonde2);
+      }
+      if (PistaSalida2.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PistaSalida2);
+      }
+      if (HoraSalida2.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(HoraSalida2);
+      }
+      if (Llegda1.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Llegda1);
+      }
+      if (DeDonde1.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DeDonde1);
+      }
+      if (PistaLlegada1.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PistaLlegada1);
+      }
+      if (HoraLlegada1.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(HoraLlegada1);
+      }
+      if (Llegda2.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Llegda2);
+      }
+      if (DeDonde2.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DeDonde2);
+      }
+      if (PistaLlegada2.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PistaLlegada2);
+      }
+      if (HoraLlegada2.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(HoraLlegada2);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Resp_Pantalla other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Salida1.Length != 0) {
+        Salida1 = other.Salida1;
+      }
+      if (other.ADonde1.Length != 0) {
+        ADonde1 = other.ADonde1;
+      }
+      if (other.PistaSalida1.Length != 0) {
+        PistaSalida1 = other.PistaSalida1;
+      }
+      if (other.HoraSalida1.Length != 0) {
+        HoraSalida1 = other.HoraSalida1;
+      }
+      if (other.Salida2.Length != 0) {
+        Salida2 = other.Salida2;
+      }
+      if (other.ADonde2.Length != 0) {
+        ADonde2 = other.ADonde2;
+      }
+      if (other.PistaSalida2.Length != 0) {
+        PistaSalida2 = other.PistaSalida2;
+      }
+      if (other.HoraSalida2.Length != 0) {
+        HoraSalida2 = other.HoraSalida2;
+      }
+      if (other.Llegda1.Length != 0) {
+        Llegda1 = other.Llegda1;
+      }
+      if (other.DeDonde1.Length != 0) {
+        DeDonde1 = other.DeDonde1;
+      }
+      if (other.PistaLlegada1.Length != 0) {
+        PistaLlegada1 = other.PistaLlegada1;
+      }
+      if (other.HoraLlegada1.Length != 0) {
+        HoraLlegada1 = other.HoraLlegada1;
+      }
+      if (other.Llegda2.Length != 0) {
+        Llegda2 = other.Llegda2;
+      }
+      if (other.DeDonde2.Length != 0) {
+        DeDonde2 = other.DeDonde2;
+      }
+      if (other.PistaLlegada2.Length != 0) {
+        PistaLlegada2 = other.PistaLlegada2;
+      }
+      if (other.HoraLlegada2.Length != 0) {
+        HoraLlegada2 = other.HoraLlegada2;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Salida1 = input.ReadString();
+            break;
+          }
+          case 18: {
+            ADonde1 = input.ReadString();
+            break;
+          }
+          case 26: {
+            PistaSalida1 = input.ReadString();
+            break;
+          }
+          case 34: {
+            HoraSalida1 = input.ReadString();
+            break;
+          }
+          case 42: {
+            Salida2 = input.ReadString();
+            break;
+          }
+          case 50: {
+            ADonde2 = input.ReadString();
+            break;
+          }
+          case 58: {
+            PistaSalida2 = input.ReadString();
+            break;
+          }
+          case 66: {
+            HoraSalida2 = input.ReadString();
+            break;
+          }
+          case 74: {
+            Llegda1 = input.ReadString();
+            break;
+          }
+          case 82: {
+            DeDonde1 = input.ReadString();
+            break;
+          }
+          case 90: {
+            PistaLlegada1 = input.ReadString();
+            break;
+          }
+          case 98: {
+            HoraLlegada1 = input.ReadString();
+            break;
+          }
+          case 106: {
+            Llegda2 = input.ReadString();
+            break;
+          }
+          case 114: {
+            DeDonde2 = input.ReadString();
+            break;
+          }
+          case 122: {
+            PistaLlegada2 = input.ReadString();
+            break;
+          }
+          case 130: {
+            HoraLlegada2 = input.ReadString();
             break;
           }
         }

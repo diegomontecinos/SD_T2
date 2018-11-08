@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='Aeropuerto',
   syntax='proto3',
   serialized_options=_b('\n\033io.grpc.examples.AeropuertoB\017AeropuertoProtoP\001\242\002\003HLW'),
-  serialized_pb=_b('\n\x0bTorre.proto\x12\nAeropuerto\"3\n\tPista_Des\x12\x10\n\x08Id_avion\x18\x01 \x01(\t\x12\x14\n\x0cName_destino\x18\x02 \x01(\t\"\xb6\x01\n\x08Resp_Des\x12\x1d\n\x15\x41utorizacion_despegue\x18\x01 \x01(\x08\x12\x16\n\x0ePista_despegue\x18\x02 \x01(\t\x12\x17\n\x0f\x41ltura_despegue\x18\x03 \x01(\x05\x12\x19\n\x11Posicion_despegue\x18\x04 \x01(\x05\x12\x19\n\x11\x41nterior_despegue\x18\x05 \x01(\t\x12\x12\n\nIp_destino\x18\x06 \x01(\t\x12\x10\n\x08Id_avion\x18\x07 \x01(\t\"\x1c\n\x08Pista_At\x12\x10\n\x08Id_avion\x18\x01 \x01(\t\"\xab\x01\n\x07Resp_At\x12\x1f\n\x17\x41utorizacion_aterrizaje\x18\x01 \x01(\x08\x12\x18\n\x10Pista_aterrizaje\x18\x02 \x01(\x05\x12\x19\n\x11\x41ltura_aterrizaje\x18\x03 \x01(\x05\x12\x1b\n\x13Posicion_aterrizaje\x18\x04 \x01(\x05\x12\x1b\n\x13\x41nterior_aterrizaje\x18\x05 \x01(\t\x12\x10\n\x08Id_avion\x18\x06 \x01(\t2L\n\x08\x44\x65spegue\x12@\n\x0f\x65nviar_despegue\x12\x15.Aeropuerto.Pista_Des\x1a\x14.Aeropuerto.Resp_Des\"\x00\x32N\n\nAterrizaje\x12@\n\x11\x65nviar_aterrizaje\x12\x14.Aeropuerto.Pista_At\x1a\x13.Aeropuerto.Resp_At\"\x00\x42\x36\n\x1bio.grpc.examples.AeropuertoB\x0f\x41\x65ropuertoProtoP\x01\xa2\x02\x03HLWb\x06proto3')
+  serialized_pb=_b('\n\x0bTorre.proto\x12\nAeropuerto\"3\n\tPista_Des\x12\x10\n\x08Id_avion\x18\x01 \x01(\t\x12\x14\n\x0cName_destino\x18\x02 \x01(\t\"\xb6\x01\n\x08Resp_Des\x12\x1d\n\x15\x41utorizacion_despegue\x18\x01 \x01(\x08\x12\x16\n\x0ePista_despegue\x18\x02 \x01(\t\x12\x17\n\x0f\x41ltura_despegue\x18\x03 \x01(\x05\x12\x19\n\x11Posicion_despegue\x18\x04 \x01(\x05\x12\x19\n\x11\x41nterior_despegue\x18\x05 \x01(\t\x12\x12\n\nIp_destino\x18\x06 \x01(\t\x12\x10\n\x08Id_avion\x18\x07 \x01(\t\"\x1c\n\x08Pista_At\x12\x10\n\x08Id_avion\x18\x01 \x01(\t\"\xab\x01\n\x07Resp_At\x12\x1f\n\x17\x41utorizacion_aterrizaje\x18\x01 \x01(\x08\x12\x18\n\x10Pista_aterrizaje\x18\x02 \x01(\x05\x12\x19\n\x11\x41ltura_aterrizaje\x18\x03 \x01(\x05\x12\x1b\n\x13Posicion_aterrizaje\x18\x04 \x01(\x05\x12\x1b\n\x13\x41nterior_aterrizaje\x18\x05 \x01(\t\x12\x10\n\x08Id_avion\x18\x06 \x01(\t\"&\n\x0bId_Pantalla\x12\x17\n\x0fNombre_Pantalla\x18\x01 \x01(\t\"\xd5\x02\n\rResp_Pantalla\x12\x0f\n\x07Salida1\x18\x01 \x01(\t\x12\x10\n\x08\x41_Donde1\x18\x02 \x01(\t\x12\x15\n\rPista_Salida1\x18\x03 \x01(\t\x12\x14\n\x0cHora_Salida1\x18\x04 \x01(\t\x12\x0f\n\x07Salida2\x18\x05 \x01(\t\x12\x10\n\x08\x41_Donde2\x18\x06 \x01(\t\x12\x15\n\rPista_Salida2\x18\x07 \x01(\t\x12\x14\n\x0cHora_Salida2\x18\x08 \x01(\t\x12\x0f\n\x07Llegda1\x18\t \x01(\t\x12\x11\n\tDe_donde1\x18\n \x01(\t\x12\x16\n\x0ePista_Llegada1\x18\x0b \x01(\t\x12\x15\n\rHora_Llegada1\x18\x0c \x01(\t\x12\x0f\n\x07Llegda2\x18\r \x01(\t\x12\x11\n\tDe_donde2\x18\x0e \x01(\t\x12\x16\n\x0ePista_Llegada2\x18\x0f \x01(\t\x12\x15\n\rHora_Llegada2\x18\x10 \x01(\t2\xd5\x01\n\nAeropuerto\x12@\n\x0f\x65nviar_despegue\x12\x15.Aeropuerto.Pista_Des\x1a\x14.Aeropuerto.Resp_Des\"\x00\x12@\n\x11\x65nviar_aterrizaje\x12\x14.Aeropuerto.Pista_At\x1a\x13.Aeropuerto.Resp_At\"\x00\x12\x43\n\x0b\x65nviar_info\x12\x17.Aeropuerto.Id_Pantalla\x1a\x19.Aeropuerto.Resp_Pantalla\"\x00\x42\x36\n\x1bio.grpc.examples.AeropuertoB\x0f\x41\x65ropuertoProtoP\x01\xa2\x02\x03HLWb\x06proto3')
 )
 
 
@@ -232,10 +232,179 @@ _RESP_AT = _descriptor.Descriptor(
   serialized_end=467,
 )
 
+
+_ID_PANTALLA = _descriptor.Descriptor(
+  name='Id_Pantalla',
+  full_name='Aeropuerto.Id_Pantalla',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='Nombre_Pantalla', full_name='Aeropuerto.Id_Pantalla.Nombre_Pantalla', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=469,
+  serialized_end=507,
+)
+
+
+_RESP_PANTALLA = _descriptor.Descriptor(
+  name='Resp_Pantalla',
+  full_name='Aeropuerto.Resp_Pantalla',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='Salida1', full_name='Aeropuerto.Resp_Pantalla.Salida1', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='A_Donde1', full_name='Aeropuerto.Resp_Pantalla.A_Donde1', index=1,
+      number=2, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='Pista_Salida1', full_name='Aeropuerto.Resp_Pantalla.Pista_Salida1', index=2,
+      number=3, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='Hora_Salida1', full_name='Aeropuerto.Resp_Pantalla.Hora_Salida1', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='Salida2', full_name='Aeropuerto.Resp_Pantalla.Salida2', index=4,
+      number=5, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='A_Donde2', full_name='Aeropuerto.Resp_Pantalla.A_Donde2', index=5,
+      number=6, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='Pista_Salida2', full_name='Aeropuerto.Resp_Pantalla.Pista_Salida2', index=6,
+      number=7, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='Hora_Salida2', full_name='Aeropuerto.Resp_Pantalla.Hora_Salida2', index=7,
+      number=8, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='Llegda1', full_name='Aeropuerto.Resp_Pantalla.Llegda1', index=8,
+      number=9, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='De_donde1', full_name='Aeropuerto.Resp_Pantalla.De_donde1', index=9,
+      number=10, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='Pista_Llegada1', full_name='Aeropuerto.Resp_Pantalla.Pista_Llegada1', index=10,
+      number=11, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='Hora_Llegada1', full_name='Aeropuerto.Resp_Pantalla.Hora_Llegada1', index=11,
+      number=12, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='Llegda2', full_name='Aeropuerto.Resp_Pantalla.Llegda2', index=12,
+      number=13, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='De_donde2', full_name='Aeropuerto.Resp_Pantalla.De_donde2', index=13,
+      number=14, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='Pista_Llegada2', full_name='Aeropuerto.Resp_Pantalla.Pista_Llegada2', index=14,
+      number=15, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='Hora_Llegada2', full_name='Aeropuerto.Resp_Pantalla.Hora_Llegada2', index=15,
+      number=16, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=510,
+  serialized_end=851,
+)
+
 DESCRIPTOR.message_types_by_name['Pista_Des'] = _PISTA_DES
 DESCRIPTOR.message_types_by_name['Resp_Des'] = _RESP_DES
 DESCRIPTOR.message_types_by_name['Pista_At'] = _PISTA_AT
 DESCRIPTOR.message_types_by_name['Resp_At'] = _RESP_AT
+DESCRIPTOR.message_types_by_name['Id_Pantalla'] = _ID_PANTALLA
+DESCRIPTOR.message_types_by_name['Resp_Pantalla'] = _RESP_PANTALLA
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Pista_Des = _reflection.GeneratedProtocolMessageType('Pista_Des', (_message.Message,), dict(
@@ -266,54 +435,62 @@ Resp_At = _reflection.GeneratedProtocolMessageType('Resp_At', (_message.Message,
   ))
 _sym_db.RegisterMessage(Resp_At)
 
+Id_Pantalla = _reflection.GeneratedProtocolMessageType('Id_Pantalla', (_message.Message,), dict(
+  DESCRIPTOR = _ID_PANTALLA,
+  __module__ = 'Torre_pb2'
+  # @@protoc_insertion_point(class_scope:Aeropuerto.Id_Pantalla)
+  ))
+_sym_db.RegisterMessage(Id_Pantalla)
+
+Resp_Pantalla = _reflection.GeneratedProtocolMessageType('Resp_Pantalla', (_message.Message,), dict(
+  DESCRIPTOR = _RESP_PANTALLA,
+  __module__ = 'Torre_pb2'
+  # @@protoc_insertion_point(class_scope:Aeropuerto.Resp_Pantalla)
+  ))
+_sym_db.RegisterMessage(Resp_Pantalla)
+
 
 DESCRIPTOR._options = None
 
-_DESPEGUE = _descriptor.ServiceDescriptor(
-  name='Despegue',
-  full_name='Aeropuerto.Despegue',
+_AEROPUERTO = _descriptor.ServiceDescriptor(
+  name='Aeropuerto',
+  full_name='Aeropuerto.Aeropuerto',
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
-  serialized_start=469,
-  serialized_end=545,
+  serialized_start=854,
+  serialized_end=1067,
   methods=[
   _descriptor.MethodDescriptor(
     name='enviar_despegue',
-    full_name='Aeropuerto.Despegue.enviar_despegue',
+    full_name='Aeropuerto.Aeropuerto.enviar_despegue',
     index=0,
     containing_service=None,
     input_type=_PISTA_DES,
     output_type=_RESP_DES,
     serialized_options=None,
   ),
-])
-_sym_db.RegisterServiceDescriptor(_DESPEGUE)
-
-DESCRIPTOR.services_by_name['Despegue'] = _DESPEGUE
-
-
-_ATERRIZAJE = _descriptor.ServiceDescriptor(
-  name='Aterrizaje',
-  full_name='Aeropuerto.Aterrizaje',
-  file=DESCRIPTOR,
-  index=1,
-  serialized_options=None,
-  serialized_start=547,
-  serialized_end=625,
-  methods=[
   _descriptor.MethodDescriptor(
     name='enviar_aterrizaje',
-    full_name='Aeropuerto.Aterrizaje.enviar_aterrizaje',
-    index=0,
+    full_name='Aeropuerto.Aeropuerto.enviar_aterrizaje',
+    index=1,
     containing_service=None,
     input_type=_PISTA_AT,
     output_type=_RESP_AT,
     serialized_options=None,
   ),
+  _descriptor.MethodDescriptor(
+    name='enviar_info',
+    full_name='Aeropuerto.Aeropuerto.enviar_info',
+    index=2,
+    containing_service=None,
+    input_type=_ID_PANTALLA,
+    output_type=_RESP_PANTALLA,
+    serialized_options=None,
+  ),
 ])
-_sym_db.RegisterServiceDescriptor(_ATERRIZAJE)
+_sym_db.RegisterServiceDescriptor(_AEROPUERTO)
 
-DESCRIPTOR.services_by_name['Aterrizaje'] = _ATERRIZAJE
+DESCRIPTOR.services_by_name['Aeropuerto'] = _AEROPUERTO
 
 # @@protoc_insertion_point(module_scope)

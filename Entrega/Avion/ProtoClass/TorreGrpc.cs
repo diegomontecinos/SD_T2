@@ -8,12 +8,16 @@
 using grpc = global::Grpc.Core;
 
 namespace Aeropuerto {
-  public static partial class Despegue
+  public static partial class Serv_Aeropuerto
   {
-    static readonly string __ServiceName = "Aeropuerto.Despegue";
+    static readonly string __ServiceName = "Aeropuerto.Serv_Aeropuerto";
 
     static readonly grpc::Marshaller<global::Aeropuerto.Pista_Des> __Marshaller_Aeropuerto_Pista_Des = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Aeropuerto.Pista_Des.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::Aeropuerto.Resp_Des> __Marshaller_Aeropuerto_Resp_Des = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Aeropuerto.Resp_Des.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Aeropuerto.Pista_At> __Marshaller_Aeropuerto_Pista_At = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Aeropuerto.Pista_At.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Aeropuerto.Resp_At> __Marshaller_Aeropuerto_Resp_At = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Aeropuerto.Resp_At.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Aeropuerto.Id_Pantalla> __Marshaller_Aeropuerto_Id_Pantalla = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Aeropuerto.Id_Pantalla.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::Aeropuerto.Resp_Pantalla> __Marshaller_Aeropuerto_Resp_Pantalla = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Aeropuerto.Resp_Pantalla.Parser.ParseFrom);
 
     static readonly grpc::Method<global::Aeropuerto.Pista_Des, global::Aeropuerto.Resp_Des> __Method_enviar_despegue = new grpc::Method<global::Aeropuerto.Pista_Des, global::Aeropuerto.Resp_Des>(
         grpc::MethodType.Unary,
@@ -22,87 +26,6 @@ namespace Aeropuerto {
         __Marshaller_Aeropuerto_Pista_Des,
         __Marshaller_Aeropuerto_Resp_Des);
 
-    /// <summary>Service descriptor</summary>
-    public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
-    {
-      get { return global::Aeropuerto.TorreReflection.Descriptor.Services[0]; }
-    }
-
-    /// <summary>Base class for server-side implementations of Despegue</summary>
-    public abstract partial class DespegueBase
-    {
-      public virtual global::System.Threading.Tasks.Task<global::Aeropuerto.Resp_Des> enviar_despegue(global::Aeropuerto.Pista_Des request, grpc::ServerCallContext context)
-      {
-        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
-      }
-
-    }
-
-    /// <summary>Client for Despegue</summary>
-    public partial class DespegueClient : grpc::ClientBase<DespegueClient>
-    {
-      /// <summary>Creates a new client for Despegue</summary>
-      /// <param name="channel">The channel to use to make remote calls.</param>
-      public DespegueClient(grpc::Channel channel) : base(channel)
-      {
-      }
-      /// <summary>Creates a new client for Despegue that uses a custom <c>CallInvoker</c>.</summary>
-      /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
-      public DespegueClient(grpc::CallInvoker callInvoker) : base(callInvoker)
-      {
-      }
-      /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
-      protected DespegueClient() : base()
-      {
-      }
-      /// <summary>Protected constructor to allow creation of configured clients.</summary>
-      /// <param name="configuration">The client configuration.</param>
-      protected DespegueClient(ClientBaseConfiguration configuration) : base(configuration)
-      {
-      }
-
-      public virtual global::Aeropuerto.Resp_Des enviar_despegue(global::Aeropuerto.Pista_Des request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return enviar_despegue(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual global::Aeropuerto.Resp_Des enviar_despegue(global::Aeropuerto.Pista_Des request, grpc::CallOptions options)
-      {
-        return CallInvoker.BlockingUnaryCall(__Method_enviar_despegue, null, options, request);
-      }
-      public virtual grpc::AsyncUnaryCall<global::Aeropuerto.Resp_Des> enviar_despegueAsync(global::Aeropuerto.Pista_Des request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
-      {
-        return enviar_despegueAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
-      }
-      public virtual grpc::AsyncUnaryCall<global::Aeropuerto.Resp_Des> enviar_despegueAsync(global::Aeropuerto.Pista_Des request, grpc::CallOptions options)
-      {
-        return CallInvoker.AsyncUnaryCall(__Method_enviar_despegue, null, options, request);
-      }
-      /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
-      protected override DespegueClient NewInstance(ClientBaseConfiguration configuration)
-      {
-        return new DespegueClient(configuration);
-      }
-    }
-
-    /// <summary>Creates service definition that can be registered with a server</summary>
-    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
-    public static grpc::ServerServiceDefinition BindService(DespegueBase serviceImpl)
-    {
-      return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_enviar_despegue, serviceImpl.enviar_despegue).Build();
-    }
-
-  }
-  /// <summary>
-  ///asignacion pista de aterrizaje
-  /// </summary>
-  public static partial class Aterrizaje
-  {
-    static readonly string __ServiceName = "Aeropuerto.Aterrizaje";
-
-    static readonly grpc::Marshaller<global::Aeropuerto.Pista_At> __Marshaller_Aeropuerto_Pista_At = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Aeropuerto.Pista_At.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::Aeropuerto.Resp_At> __Marshaller_Aeropuerto_Resp_At = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::Aeropuerto.Resp_At.Parser.ParseFrom);
-
     static readonly grpc::Method<global::Aeropuerto.Pista_At, global::Aeropuerto.Resp_At> __Method_enviar_aterrizaje = new grpc::Method<global::Aeropuerto.Pista_At, global::Aeropuerto.Resp_At>(
         grpc::MethodType.Unary,
         __ServiceName,
@@ -110,74 +33,227 @@ namespace Aeropuerto {
         __Marshaller_Aeropuerto_Pista_At,
         __Marshaller_Aeropuerto_Resp_At);
 
+    static readonly grpc::Method<global::Aeropuerto.Id_Pantalla, global::Aeropuerto.Resp_Pantalla> __Method_enviar_info = new grpc::Method<global::Aeropuerto.Id_Pantalla, global::Aeropuerto.Resp_Pantalla>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "enviar_info",
+        __Marshaller_Aeropuerto_Id_Pantalla,
+        __Marshaller_Aeropuerto_Resp_Pantalla);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
-      get { return global::Aeropuerto.TorreReflection.Descriptor.Services[1]; }
+      get { return global::Aeropuerto.TorreReflection.Descriptor.Services[0]; }
     }
 
-    /// <summary>Base class for server-side implementations of Aterrizaje</summary>
-    public abstract partial class AterrizajeBase
+    /// <summary>Base class for server-side implementations of Serv_Aeropuerto</summary>
+    public abstract partial class Serv_AeropuertoBase
     {
+      /// <summary>
+      ///solicitud de despegue
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Aeropuerto.Resp_Des> enviar_despegue(global::Aeropuerto.Pista_Des request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      ///asignacion pista de aterrizaje
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       public virtual global::System.Threading.Tasks.Task<global::Aeropuerto.Resp_At> enviar_aterrizaje(global::Aeropuerto.Pista_At request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      /// <summary>
+      ///Enviar info pantallas
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      public virtual global::System.Threading.Tasks.Task<global::Aeropuerto.Resp_Pantalla> enviar_info(global::Aeropuerto.Id_Pantalla request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
 
     }
 
-    /// <summary>Client for Aterrizaje</summary>
-    public partial class AterrizajeClient : grpc::ClientBase<AterrizajeClient>
+    /// <summary>Client for Serv_Aeropuerto</summary>
+    public partial class Serv_AeropuertoClient : grpc::ClientBase<Serv_AeropuertoClient>
     {
-      /// <summary>Creates a new client for Aterrizaje</summary>
+      /// <summary>Creates a new client for Serv_Aeropuerto</summary>
       /// <param name="channel">The channel to use to make remote calls.</param>
-      public AterrizajeClient(grpc::Channel channel) : base(channel)
+      public Serv_AeropuertoClient(grpc::Channel channel) : base(channel)
       {
       }
-      /// <summary>Creates a new client for Aterrizaje that uses a custom <c>CallInvoker</c>.</summary>
+      /// <summary>Creates a new client for Serv_Aeropuerto that uses a custom <c>CallInvoker</c>.</summary>
       /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
-      public AterrizajeClient(grpc::CallInvoker callInvoker) : base(callInvoker)
+      public Serv_AeropuertoClient(grpc::CallInvoker callInvoker) : base(callInvoker)
       {
       }
       /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
-      protected AterrizajeClient() : base()
+      protected Serv_AeropuertoClient() : base()
       {
       }
       /// <summary>Protected constructor to allow creation of configured clients.</summary>
       /// <param name="configuration">The client configuration.</param>
-      protected AterrizajeClient(ClientBaseConfiguration configuration) : base(configuration)
+      protected Serv_AeropuertoClient(ClientBaseConfiguration configuration) : base(configuration)
       {
       }
 
+      /// <summary>
+      ///solicitud de despegue
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Aeropuerto.Resp_Des enviar_despegue(global::Aeropuerto.Pista_Des request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return enviar_despegue(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///solicitud de despegue
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Aeropuerto.Resp_Des enviar_despegue(global::Aeropuerto.Pista_Des request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_enviar_despegue, null, options, request);
+      }
+      /// <summary>
+      ///solicitud de despegue
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Aeropuerto.Resp_Des> enviar_despegueAsync(global::Aeropuerto.Pista_Des request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return enviar_despegueAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///solicitud de despegue
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Aeropuerto.Resp_Des> enviar_despegueAsync(global::Aeropuerto.Pista_Des request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_enviar_despegue, null, options, request);
+      }
+      /// <summary>
+      ///asignacion pista de aterrizaje
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Aeropuerto.Resp_At enviar_aterrizaje(global::Aeropuerto.Pista_At request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return enviar_aterrizaje(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      ///asignacion pista de aterrizaje
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
       public virtual global::Aeropuerto.Resp_At enviar_aterrizaje(global::Aeropuerto.Pista_At request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_enviar_aterrizaje, null, options, request);
       }
+      /// <summary>
+      ///asignacion pista de aterrizaje
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Aeropuerto.Resp_At> enviar_aterrizajeAsync(global::Aeropuerto.Pista_At request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return enviar_aterrizajeAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
+      /// <summary>
+      ///asignacion pista de aterrizaje
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
       public virtual grpc::AsyncUnaryCall<global::Aeropuerto.Resp_At> enviar_aterrizajeAsync(global::Aeropuerto.Pista_At request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_enviar_aterrizaje, null, options, request);
       }
-      /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
-      protected override AterrizajeClient NewInstance(ClientBaseConfiguration configuration)
+      /// <summary>
+      ///Enviar info pantallas
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Aeropuerto.Resp_Pantalla enviar_info(global::Aeropuerto.Id_Pantalla request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
-        return new AterrizajeClient(configuration);
+        return enviar_info(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Enviar info pantallas
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The response received from the server.</returns>
+      public virtual global::Aeropuerto.Resp_Pantalla enviar_info(global::Aeropuerto.Id_Pantalla request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_enviar_info, null, options, request);
+      }
+      /// <summary>
+      ///Enviar info pantallas
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="headers">The initial metadata to send with the call. This parameter is optional.</param>
+      /// <param name="deadline">An optional deadline for the call. The call will be cancelled if deadline is hit.</param>
+      /// <param name="cancellationToken">An optional token for canceling the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Aeropuerto.Resp_Pantalla> enviar_infoAsync(global::Aeropuerto.Id_Pantalla request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return enviar_infoAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      /// <summary>
+      ///Enviar info pantallas
+      /// </summary>
+      /// <param name="request">The request to send to the server.</param>
+      /// <param name="options">The options for the call.</param>
+      /// <returns>The call object.</returns>
+      public virtual grpc::AsyncUnaryCall<global::Aeropuerto.Resp_Pantalla> enviar_infoAsync(global::Aeropuerto.Id_Pantalla request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_enviar_info, null, options, request);
+      }
+      /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+      protected override Serv_AeropuertoClient NewInstance(ClientBaseConfiguration configuration)
+      {
+        return new Serv_AeropuertoClient(configuration);
       }
     }
 
     /// <summary>Creates service definition that can be registered with a server</summary>
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
-    public static grpc::ServerServiceDefinition BindService(AterrizajeBase serviceImpl)
+    public static grpc::ServerServiceDefinition BindService(Serv_AeropuertoBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_enviar_aterrizaje, serviceImpl.enviar_aterrizaje).Build();
+          .AddMethod(__Method_enviar_despegue, serviceImpl.enviar_despegue)
+          .AddMethod(__Method_enviar_aterrizaje, serviceImpl.enviar_aterrizaje)
+          .AddMethod(__Method_enviar_info, serviceImpl.enviar_info).Build();
     }
 
   }

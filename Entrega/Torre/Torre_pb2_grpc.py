@@ -4,7 +4,7 @@ import grpc
 import Torre_pb2 as Torre__pb2
 
 
-class DespegueStub(object):
+class AeropuertoStub(object):
   """asignacion pista de despegue
 
   """
@@ -16,75 +16,67 @@ class DespegueStub(object):
       channel: A grpc.Channel.
     """
     self.enviar_despegue = channel.unary_unary(
-        '/Aeropuerto.Despegue/enviar_despegue',
+        '/Aeropuerto.Aeropuerto/enviar_despegue',
         request_serializer=Torre__pb2.Pista_Des.SerializeToString,
         response_deserializer=Torre__pb2.Resp_Des.FromString,
         )
+    self.enviar_aterrizaje = channel.unary_unary(
+        '/Aeropuerto.Aeropuerto/enviar_aterrizaje',
+        request_serializer=Torre__pb2.Pista_At.SerializeToString,
+        response_deserializer=Torre__pb2.Resp_At.FromString,
+        )
+    self.enviar_info = channel.unary_unary(
+        '/Aeropuerto.Aeropuerto/enviar_info',
+        request_serializer=Torre__pb2.Id_Pantalla.SerializeToString,
+        response_deserializer=Torre__pb2.Resp_Pantalla.FromString,
+        )
 
 
-class DespegueServicer(object):
+class AeropuertoServicer(object):
   """asignacion pista de despegue
 
   """
 
   def enviar_despegue(self, request, context):
-    # missing associated documentation comment in .proto file
-    pass
+    """solicitud de despegue
+    """
+    context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+    context.set_details('Method not implemented!')
+    raise NotImplementedError('Method not implemented!')
+
+  def enviar_aterrizaje(self, request, context):
+    """asignacion pista de aterrizaje
+    """
+    context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+    context.set_details('Method not implemented!')
+    raise NotImplementedError('Method not implemented!')
+
+  def enviar_info(self, request, context):
+    """Enviar info pantallas
+    """
     context.set_code(grpc.StatusCode.UNIMPLEMENTED)
     context.set_details('Method not implemented!')
     raise NotImplementedError('Method not implemented!')
 
 
-def add_DespegueServicer_to_server(servicer, server):
+def add_AeropuertoServicer_to_server(servicer, server):
   rpc_method_handlers = {
       'enviar_despegue': grpc.unary_unary_rpc_method_handler(
           servicer.enviar_despegue,
           request_deserializer=Torre__pb2.Pista_Des.FromString,
           response_serializer=Torre__pb2.Resp_Des.SerializeToString,
       ),
-  }
-  generic_handler = grpc.method_handlers_generic_handler(
-      'Aeropuerto.Despegue', rpc_method_handlers)
-  server.add_generic_rpc_handlers((generic_handler,))
-
-
-class AterrizajeStub(object):
-  """asignacion pista de aterrizaje
-  """
-
-  def __init__(self, channel):
-    """Constructor.
-
-    Args:
-      channel: A grpc.Channel.
-    """
-    self.enviar_aterrizaje = channel.unary_unary(
-        '/Aeropuerto.Aterrizaje/enviar_aterrizaje',
-        request_serializer=Torre__pb2.Pista_At.SerializeToString,
-        response_deserializer=Torre__pb2.Resp_At.FromString,
-        )
-
-
-class AterrizajeServicer(object):
-  """asignacion pista de aterrizaje
-  """
-
-  def enviar_aterrizaje(self, request, context):
-    # missing associated documentation comment in .proto file
-    pass
-    context.set_code(grpc.StatusCode.UNIMPLEMENTED)
-    context.set_details('Method not implemented!')
-    raise NotImplementedError('Method not implemented!')
-
-
-def add_AterrizajeServicer_to_server(servicer, server):
-  rpc_method_handlers = {
       'enviar_aterrizaje': grpc.unary_unary_rpc_method_handler(
           servicer.enviar_aterrizaje,
           request_deserializer=Torre__pb2.Pista_At.FromString,
           response_serializer=Torre__pb2.Resp_At.SerializeToString,
       ),
+      'enviar_info': grpc.unary_unary_rpc_method_handler(
+          servicer.enviar_info,
+          request_deserializer=Torre__pb2.Id_Pantalla.FromString,
+          response_serializer=Torre__pb2.Resp_Pantalla.SerializeToString,
+      ),
   }
   generic_handler = grpc.method_handlers_generic_handler(
-      'Aeropuerto.Aterrizaje', rpc_method_handlers)
+      'Aeropuerto.Aeropuerto', rpc_method_handlers)
   server.add_generic_rpc_handlers((generic_handler,))
