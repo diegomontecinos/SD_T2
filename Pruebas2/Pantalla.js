@@ -17,6 +17,7 @@ var PackagePantalla = grpc.loadPackageDefinition(packageDefinition).Torre;
 #llamda al codigo contructor
 
 function main(){
+
   var pantalla1 = new Torre_proto.Pantalla('localhost:50051',
                             grpc.credentials.createInsecure());
   var idPantalla = "999"
