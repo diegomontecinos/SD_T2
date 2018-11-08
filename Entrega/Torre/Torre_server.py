@@ -79,6 +79,9 @@ class Aeropuerto(Torre_pb2_grpc.Serv_AeropuertoServicer):
     def confirmar_despegue(self, request, context):
         print("la wea")
 
+    def enviar_info(self, request, context):
+        return Torre_pb2.Resp_Pantalla( Salida1 = "la wea 1", A_Donde1 = "a la chucha", Pista_Salida1 = "pista 1", Hora_Salida1 = "hora del pico", Salida2 = "la wea 2", A_Donde2 = "a la chucha 2", Pista_Salida2 = "pista 2", Hora_Salida2 = "hora del pico 2", Llegda1 = "tarde 1", De_donde1 = "donde tu vieja 1", Pista_Llegada1 = "pista 3", Hora_Llegada1 = "queti 1", Llegda2 = "tarde 2", De_donde2 = "donde tu vieja 2", Pista_Llegada2 = "pista 4", Hora_Llegada2 = "queti 2")
+
 def serve():
 
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
