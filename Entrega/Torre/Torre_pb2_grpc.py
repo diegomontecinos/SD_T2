@@ -4,10 +4,9 @@ import grpc
 import Torre_pb2 as Torre__pb2
 
 
-class AeropuertoStub(object):
-  """asignacion pista de despegue
-
-  """
+class Serv_AeropuertoStub(object):
+  # missing associated documentation comment in .proto file
+  pass
 
   def __init__(self, channel):
     """Constructor.
@@ -16,29 +15,40 @@ class AeropuertoStub(object):
       channel: A grpc.Channel.
     """
     self.enviar_despegue = channel.unary_unary(
-        '/Aeropuerto.Aeropuerto/enviar_despegue',
+        '/Aeropuerto.Serv_Aeropuerto/enviar_despegue',
         request_serializer=Torre__pb2.Pista_Des.SerializeToString,
         response_deserializer=Torre__pb2.Resp_Des.FromString,
         )
+    self.confirmar_despegue = channel.unary_unary(
+        '/Aeropuerto.Serv_Aeropuerto/confirmar_despegue',
+        request_serializer=Torre__pb2.Cons_Des.SerializeToString,
+        response_deserializer=Torre__pb2.Resp_Cons.FromString,
+        )
     self.enviar_aterrizaje = channel.unary_unary(
-        '/Aeropuerto.Aeropuerto/enviar_aterrizaje',
+        '/Aeropuerto.Serv_Aeropuerto/enviar_aterrizaje',
         request_serializer=Torre__pb2.Pista_At.SerializeToString,
         response_deserializer=Torre__pb2.Resp_At.FromString,
         )
     self.enviar_info = channel.unary_unary(
-        '/Aeropuerto.Aeropuerto/enviar_info',
+        '/Aeropuerto.Serv_Aeropuerto/enviar_info',
         request_serializer=Torre__pb2.Id_Pantalla.SerializeToString,
         response_deserializer=Torre__pb2.Resp_Pantalla.FromString,
         )
 
 
-class AeropuertoServicer(object):
-  """asignacion pista de despegue
-
-  """
+class Serv_AeropuertoServicer(object):
+  # missing associated documentation comment in .proto file
+  pass
 
   def enviar_despegue(self, request, context):
     """solicitud de despegue
+    """
+    context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+    context.set_details('Method not implemented!')
+    raise NotImplementedError('Method not implemented!')
+
+  def confirmar_despegue(self, request, context):
+    """
     """
     context.set_code(grpc.StatusCode.UNIMPLEMENTED)
     context.set_details('Method not implemented!')
@@ -59,12 +69,17 @@ class AeropuertoServicer(object):
     raise NotImplementedError('Method not implemented!')
 
 
-def add_AeropuertoServicer_to_server(servicer, server):
+def add_Serv_AeropuertoServicer_to_server(servicer, server):
   rpc_method_handlers = {
       'enviar_despegue': grpc.unary_unary_rpc_method_handler(
           servicer.enviar_despegue,
           request_deserializer=Torre__pb2.Pista_Des.FromString,
           response_serializer=Torre__pb2.Resp_Des.SerializeToString,
+      ),
+      'confirmar_despegue': grpc.unary_unary_rpc_method_handler(
+          servicer.confirmar_despegue,
+          request_deserializer=Torre__pb2.Cons_Des.FromString,
+          response_serializer=Torre__pb2.Resp_Cons.SerializeToString,
       ),
       'enviar_aterrizaje': grpc.unary_unary_rpc_method_handler(
           servicer.enviar_aterrizaje,
@@ -78,5 +93,5 @@ def add_AeropuertoServicer_to_server(servicer, server):
       ),
   }
   generic_handler = grpc.method_handlers_generic_handler(
-      'Aeropuerto.Aeropuerto', rpc_method_handlers)
+      'Aeropuerto.Serv_Aeropuerto', rpc_method_handlers)
   server.add_generic_rpc_handlers((generic_handler,))

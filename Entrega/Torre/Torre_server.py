@@ -25,7 +25,7 @@ def Revisar_pistas(pistas):
     return Mejor_pista
 
 
-class Despegue(Torre_pb2_grpc.DespegueServicer):
+class Aeropuerto(Torre_pb2_grpc.Serv_AeropuertoServicer):
 
 #incializacion de los datos de la torre de control
     def __init__(self):
@@ -33,7 +33,7 @@ class Despegue(Torre_pb2_grpc.DespegueServicer):
         self.Nombre = input("Por favor ingrese nombre del aeropuerto: ")
         self.IP = input("Por favor ingrese la dirección IP del aeropuerto "+self.Nombre+": ")
         self.Numero_pistas = int(input("Por favor ingrese cantidad de pistas del aeropuerto "+self.Nombre+": "))
-        self.Altura_min_espera = 5000 #altura en metros
+        self.Altura_de_despegue = 10000 #altura en metros
         #diccionario de pistas de Aterrizaje del aeropuerto
         self.Pistas_aterrizaje = dict()
         #self.Pistas_aterrizaje["Pista_0"] = "Pista_0"
@@ -59,24 +59,30 @@ class Despegue(Torre_pb2_grpc.DespegueServicer):
     def enviar_despegue(self, request, context):
 
         Pista = Revisar_pistas(self.Pistas_despegue)
-        Altura = self.Altura_min_espera + 50
-        self.Altura_min_espera = Altura
-        if len(self.Pistas_despegue[Pista]) > 0:
+
+        if len(self.Pistas[Pista]) > 0:
+            Respuesta = False
+            Altura = 0
             Anterior = self.Pistas_despegue[Pista][-1]
+            self.Pistas_despegue[Pista].append(request.Id_avion)
+            Posicion = len(self.Pistas_despegue[Pista])
+
         else:
+            Respuesta = True
+            Altura = self.Altura_de_despegue + 50
+            self.Altura_de_despegue = Altura
             Anterior = "Eres el primero"
-        self.Pistas_despegue[Pista].append(request.Id_avion)
-        Posicion = len(self.Pistas_despegue[Pista])
+            Posicion = 0
 
+        return Torre_pb2.Resp_Des(Autorizacion_despegue = Respuesta, Pista_despegue = Pista, Altura_despegue = Altura, Posicion_despegue = Posicion ,Anterior_despegue = Anterior, Ip_destino= request.Name_destino, Id_avion = request.Id_avion)
 
-
-        return Torre_pb2.Resp_Des(Autorizacion_despegue = False, Pista_despegue = Pista, Altura_despegue = Altura, Posicion_despegue = Posicion ,Anterior_despegue = Anterior, Ip_destino= request.Name_destino, Id_avion = request.Id_avion)
-
+    def confirmar_despegue(self, request, context):
+        print("la wea")
 
 def serve():
 
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
-    Torre_pb2_grpc.add_DespegueServicer_to_server(Despegue(),server)
+    Torre_pb2_grpc.add_Serv_AeropuertoServicer_to_server(Aeropuerto(),server)
     server.add_insecure_port('[::]:50051')#cambiar por la ip+puerto
     server.start()
     try:

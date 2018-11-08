@@ -12,6 +12,9 @@ service Serv_Aeropuerto{
 //solicitud de despegue
   rpc enviar_despegue (Pista_Des) returns (Resp_Des){}
 
+//
+  rpc confirmar_despegue (Cons_Des) returns (Resp_Cons){}
+
 //asignacion pista de aterrizaje
   rpc enviar_aterrizaje (Pista_At) returns (Resp_At){}
 
@@ -29,6 +32,7 @@ message Pista_Des{
 }
 
 message Resp_Des{
+
   bool Autorizacion_despegue = 1;
   string Pista_despegue = 2;
   int32 Altura_despegue = 3;
@@ -37,6 +41,23 @@ message Resp_Des{
   string Ip_destino = 6;
   string Id_avion = 7;
   }
+
+message Cons_Des {
+
+  string Id_avion = 1;
+  string Name_destino = 2;
+}
+
+message Resp_Cons {
+
+  bool Autorizacion_despegue = 1;
+  string Pista_despegue = 2;
+  int32 Altura_despegue = 3;
+  int32 Posicion_despegue = 4;
+  string Anterior_despegue = 5;
+  string Ip_destino = 6;
+  string Id_avion = 7;
+}
 
 
 message Pista_At{
