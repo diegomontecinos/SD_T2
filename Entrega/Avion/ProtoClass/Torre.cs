@@ -29,32 +29,41 @@ namespace Aeropuerto {
             "cxIdChVBdXRvcml6YWNpb25fZGVzcGVndWUYASABKAgSFgoOUGlzdGFfZGVz",
             "cGVndWUYAiABKAkSFwoPQWx0dXJhX2Rlc3BlZ3VlGAMgASgFEhkKEVBvc2lj",
             "aW9uX2Rlc3BlZ3VlGAQgASgFEhkKEUFudGVyaW9yX2Rlc3BlZ3VlGAUgASgJ",
-            "EhIKCklwX2Rlc3Rpbm8YBiABKAkSEAoISWRfYXZpb24YByABKAkiHAoIUGlz",
-            "dGFfQXQSEAoISWRfYXZpb24YASABKAkiqwEKB1Jlc3BfQXQSHwoXQXV0b3Jp",
-            "emFjaW9uX2F0ZXJyaXphamUYASABKAgSGAoQUGlzdGFfYXRlcnJpemFqZRgC",
-            "IAEoBRIZChFBbHR1cmFfYXRlcnJpemFqZRgDIAEoBRIbChNQb3NpY2lvbl9h",
-            "dGVycml6YWplGAQgASgFEhsKE0FudGVyaW9yX2F0ZXJyaXphamUYBSABKAkS",
-            "EAoISWRfYXZpb24YBiABKAkiJgoLSWRfUGFudGFsbGESFwoPTm9tYnJlX1Bh",
-            "bnRhbGxhGAEgASgJItUCCg1SZXNwX1BhbnRhbGxhEg8KB1NhbGlkYTEYASAB",
-            "KAkSEAoIQV9Eb25kZTEYAiABKAkSFQoNUGlzdGFfU2FsaWRhMRgDIAEoCRIU",
-            "CgxIb3JhX1NhbGlkYTEYBCABKAkSDwoHU2FsaWRhMhgFIAEoCRIQCghBX0Rv",
-            "bmRlMhgGIAEoCRIVCg1QaXN0YV9TYWxpZGEyGAcgASgJEhQKDEhvcmFfU2Fs",
-            "aWRhMhgIIAEoCRIPCgdMbGVnZGExGAkgASgJEhEKCURlX2RvbmRlMRgKIAEo",
-            "CRIWCg5QaXN0YV9MbGVnYWRhMRgLIAEoCRIVCg1Ib3JhX0xsZWdhZGExGAwg",
-            "ASgJEg8KB0xsZWdkYTIYDSABKAkSEQoJRGVfZG9uZGUyGA4gASgJEhYKDlBp",
-            "c3RhX0xsZWdhZGEyGA8gASgJEhUKDUhvcmFfTGxlZ2FkYTIYECABKAky2gEK",
-            "D1NlcnZfQWVyb3B1ZXJ0bxJACg9lbnZpYXJfZGVzcGVndWUSFS5BZXJvcHVl",
-            "cnRvLlBpc3RhX0RlcxoULkFlcm9wdWVydG8uUmVzcF9EZXMiABJAChFlbnZp",
-            "YXJfYXRlcnJpemFqZRIULkFlcm9wdWVydG8uUGlzdGFfQXQaEy5BZXJvcHVl",
-            "cnRvLlJlc3BfQXQiABJDCgtlbnZpYXJfaW5mbxIXLkFlcm9wdWVydG8uSWRf",
-            "UGFudGFsbGEaGS5BZXJvcHVlcnRvLlJlc3BfUGFudGFsbGEiAEI2Chtpby5n",
-            "cnBjLmV4YW1wbGVzLkFlcm9wdWVydG9CD0Flcm9wdWVydG9Qcm90b1ABogID",
-            "SExXYgZwcm90bzM="));
+            "EhIKCklwX2Rlc3Rpbm8YBiABKAkSEAoISWRfYXZpb24YByABKAkiMgoIQ29u",
+            "c19EZXMSEAoISWRfYXZpb24YASABKAkSFAoMTmFtZV9kZXN0aW5vGAIgASgJ",
+            "IrcBCglSZXNwX0NvbnMSHQoVQXV0b3JpemFjaW9uX2Rlc3BlZ3VlGAEgASgI",
+            "EhYKDlBpc3RhX2Rlc3BlZ3VlGAIgASgJEhcKD0FsdHVyYV9kZXNwZWd1ZRgD",
+            "IAEoBRIZChFQb3NpY2lvbl9kZXNwZWd1ZRgEIAEoBRIZChFBbnRlcmlvcl9k",
+            "ZXNwZWd1ZRgFIAEoCRISCgpJcF9kZXN0aW5vGAYgASgJEhAKCElkX2F2aW9u",
+            "GAcgASgJIhwKCFBpc3RhX0F0EhAKCElkX2F2aW9uGAEgASgJIqsBCgdSZXNw",
+            "X0F0Eh8KF0F1dG9yaXphY2lvbl9hdGVycml6YWplGAEgASgIEhgKEFBpc3Rh",
+            "X2F0ZXJyaXphamUYAiABKAUSGQoRQWx0dXJhX2F0ZXJyaXphamUYAyABKAUS",
+            "GwoTUG9zaWNpb25fYXRlcnJpemFqZRgEIAEoBRIbChNBbnRlcmlvcl9hdGVy",
+            "cml6YWplGAUgASgJEhAKCElkX2F2aW9uGAYgASgJIiYKC0lkX1BhbnRhbGxh",
+            "EhcKD05vbWJyZV9QYW50YWxsYRgBIAEoCSLVAgoNUmVzcF9QYW50YWxsYRIP",
+            "CgdTYWxpZGExGAEgASgJEhAKCEFfRG9uZGUxGAIgASgJEhUKDVBpc3RhX1Nh",
+            "bGlkYTEYAyABKAkSFAoMSG9yYV9TYWxpZGExGAQgASgJEg8KB1NhbGlkYTIY",
+            "BSABKAkSEAoIQV9Eb25kZTIYBiABKAkSFQoNUGlzdGFfU2FsaWRhMhgHIAEo",
+            "CRIUCgxIb3JhX1NhbGlkYTIYCCABKAkSDwoHTGxlZ2RhMRgJIAEoCRIRCglE",
+            "ZV9kb25kZTEYCiABKAkSFgoOUGlzdGFfTGxlZ2FkYTEYCyABKAkSFQoNSG9y",
+            "YV9MbGVnYWRhMRgMIAEoCRIPCgdMbGVnZGEyGA0gASgJEhEKCURlX2RvbmRl",
+            "MhgOIAEoCRIWCg5QaXN0YV9MbGVnYWRhMhgPIAEoCRIVCg1Ib3JhX0xsZWdh",
+            "ZGEyGBAgASgJMp8CCg9TZXJ2X0Flcm9wdWVydG8SQAoPZW52aWFyX2Rlc3Bl",
+            "Z3VlEhUuQWVyb3B1ZXJ0by5QaXN0YV9EZXMaFC5BZXJvcHVlcnRvLlJlc3Bf",
+            "RGVzIgASQwoSY29uZmlybWFyX2Rlc3BlZ3VlEhQuQWVyb3B1ZXJ0by5Db25z",
+            "X0RlcxoVLkFlcm9wdWVydG8uUmVzcF9Db25zIgASQAoRZW52aWFyX2F0ZXJy",
+            "aXphamUSFC5BZXJvcHVlcnRvLlBpc3RhX0F0GhMuQWVyb3B1ZXJ0by5SZXNw",
+            "X0F0IgASQwoLZW52aWFyX2luZm8SFy5BZXJvcHVlcnRvLklkX1BhbnRhbGxh",
+            "GhkuQWVyb3B1ZXJ0by5SZXNwX1BhbnRhbGxhIgBCNgobaW8uZ3JwYy5leGFt",
+            "cGxlcy5BZXJvcHVlcnRvQg9BZXJvcHVlcnRvUHJvdG9QAaICA0hMV2IGcHJv",
+            "dG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Pista_Des), global::Aeropuerto.Pista_Des.Parser, new[]{ "IdAvion", "NameDestino" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Resp_Des), global::Aeropuerto.Resp_Des.Parser, new[]{ "AutorizacionDespegue", "PistaDespegue", "AlturaDespegue", "PosicionDespegue", "AnteriorDespegue", "IpDestino", "IdAvion" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Cons_Des), global::Aeropuerto.Cons_Des.Parser, new[]{ "IdAvion", "NameDestino" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Resp_Cons), global::Aeropuerto.Resp_Cons.Parser, new[]{ "AutorizacionDespegue", "PistaDespegue", "AlturaDespegue", "PosicionDespegue", "AnteriorDespegue", "IpDestino", "IdAvion" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Pista_At), global::Aeropuerto.Pista_At.Parser, new[]{ "IdAvion" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Resp_At), global::Aeropuerto.Resp_At.Parser, new[]{ "AutorizacionAterrizaje", "PistaAterrizaje", "AlturaAterrizaje", "PosicionAterrizaje", "AnteriorAterrizaje", "IdAvion" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Aeropuerto.Id_Pantalla), global::Aeropuerto.Id_Pantalla.Parser, new[]{ "NombrePantalla" }, null, null, null),
@@ -519,6 +528,460 @@ namespace Aeropuerto {
 
   }
 
+  public sealed partial class Cons_Des : pb::IMessage<Cons_Des> {
+    private static readonly pb::MessageParser<Cons_Des> _parser = new pb::MessageParser<Cons_Des>(() => new Cons_Des());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Cons_Des> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Aeropuerto.TorreReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Cons_Des() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Cons_Des(Cons_Des other) : this() {
+      idAvion_ = other.idAvion_;
+      nameDestino_ = other.nameDestino_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Cons_Des Clone() {
+      return new Cons_Des(this);
+    }
+
+    /// <summary>Field number for the "Id_avion" field.</summary>
+    public const int IdAvionFieldNumber = 1;
+    private string idAvion_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string IdAvion {
+      get { return idAvion_; }
+      set {
+        idAvion_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Name_destino" field.</summary>
+    public const int NameDestinoFieldNumber = 2;
+    private string nameDestino_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string NameDestino {
+      get { return nameDestino_; }
+      set {
+        nameDestino_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Cons_Des);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Cons_Des other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IdAvion != other.IdAvion) return false;
+      if (NameDestino != other.NameDestino) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IdAvion.Length != 0) hash ^= IdAvion.GetHashCode();
+      if (NameDestino.Length != 0) hash ^= NameDestino.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (IdAvion.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(IdAvion);
+      }
+      if (NameDestino.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(NameDestino);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (IdAvion.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(IdAvion);
+      }
+      if (NameDestino.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(NameDestino);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Cons_Des other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IdAvion.Length != 0) {
+        IdAvion = other.IdAvion;
+      }
+      if (other.NameDestino.Length != 0) {
+        NameDestino = other.NameDestino;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            IdAvion = input.ReadString();
+            break;
+          }
+          case 18: {
+            NameDestino = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class Resp_Cons : pb::IMessage<Resp_Cons> {
+    private static readonly pb::MessageParser<Resp_Cons> _parser = new pb::MessageParser<Resp_Cons>(() => new Resp_Cons());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Resp_Cons> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Aeropuerto.TorreReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Resp_Cons() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Resp_Cons(Resp_Cons other) : this() {
+      autorizacionDespegue_ = other.autorizacionDespegue_;
+      pistaDespegue_ = other.pistaDespegue_;
+      alturaDespegue_ = other.alturaDespegue_;
+      posicionDespegue_ = other.posicionDespegue_;
+      anteriorDespegue_ = other.anteriorDespegue_;
+      ipDestino_ = other.ipDestino_;
+      idAvion_ = other.idAvion_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Resp_Cons Clone() {
+      return new Resp_Cons(this);
+    }
+
+    /// <summary>Field number for the "Autorizacion_despegue" field.</summary>
+    public const int AutorizacionDespegueFieldNumber = 1;
+    private bool autorizacionDespegue_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool AutorizacionDespegue {
+      get { return autorizacionDespegue_; }
+      set {
+        autorizacionDespegue_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Pista_despegue" field.</summary>
+    public const int PistaDespegueFieldNumber = 2;
+    private string pistaDespegue_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PistaDespegue {
+      get { return pistaDespegue_; }
+      set {
+        pistaDespegue_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Altura_despegue" field.</summary>
+    public const int AlturaDespegueFieldNumber = 3;
+    private int alturaDespegue_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int AlturaDespegue {
+      get { return alturaDespegue_; }
+      set {
+        alturaDespegue_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Posicion_despegue" field.</summary>
+    public const int PosicionDespegueFieldNumber = 4;
+    private int posicionDespegue_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int PosicionDespegue {
+      get { return posicionDespegue_; }
+      set {
+        posicionDespegue_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Anterior_despegue" field.</summary>
+    public const int AnteriorDespegueFieldNumber = 5;
+    private string anteriorDespegue_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AnteriorDespegue {
+      get { return anteriorDespegue_; }
+      set {
+        anteriorDespegue_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Ip_destino" field.</summary>
+    public const int IpDestinoFieldNumber = 6;
+    private string ipDestino_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string IpDestino {
+      get { return ipDestino_; }
+      set {
+        ipDestino_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Id_avion" field.</summary>
+    public const int IdAvionFieldNumber = 7;
+    private string idAvion_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string IdAvion {
+      get { return idAvion_; }
+      set {
+        idAvion_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Resp_Cons);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Resp_Cons other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (AutorizacionDespegue != other.AutorizacionDespegue) return false;
+      if (PistaDespegue != other.PistaDespegue) return false;
+      if (AlturaDespegue != other.AlturaDespegue) return false;
+      if (PosicionDespegue != other.PosicionDespegue) return false;
+      if (AnteriorDespegue != other.AnteriorDespegue) return false;
+      if (IpDestino != other.IpDestino) return false;
+      if (IdAvion != other.IdAvion) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (AutorizacionDespegue != false) hash ^= AutorizacionDespegue.GetHashCode();
+      if (PistaDespegue.Length != 0) hash ^= PistaDespegue.GetHashCode();
+      if (AlturaDespegue != 0) hash ^= AlturaDespegue.GetHashCode();
+      if (PosicionDespegue != 0) hash ^= PosicionDespegue.GetHashCode();
+      if (AnteriorDespegue.Length != 0) hash ^= AnteriorDespegue.GetHashCode();
+      if (IpDestino.Length != 0) hash ^= IpDestino.GetHashCode();
+      if (IdAvion.Length != 0) hash ^= IdAvion.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (AutorizacionDespegue != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(AutorizacionDespegue);
+      }
+      if (PistaDespegue.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PistaDespegue);
+      }
+      if (AlturaDespegue != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(AlturaDespegue);
+      }
+      if (PosicionDespegue != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(PosicionDespegue);
+      }
+      if (AnteriorDespegue.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(AnteriorDespegue);
+      }
+      if (IpDestino.Length != 0) {
+        output.WriteRawTag(50);
+        output.WriteString(IpDestino);
+      }
+      if (IdAvion.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteString(IdAvion);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (AutorizacionDespegue != false) {
+        size += 1 + 1;
+      }
+      if (PistaDespegue.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PistaDespegue);
+      }
+      if (AlturaDespegue != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(AlturaDespegue);
+      }
+      if (PosicionDespegue != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PosicionDespegue);
+      }
+      if (AnteriorDespegue.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AnteriorDespegue);
+      }
+      if (IpDestino.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(IpDestino);
+      }
+      if (IdAvion.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(IdAvion);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Resp_Cons other) {
+      if (other == null) {
+        return;
+      }
+      if (other.AutorizacionDespegue != false) {
+        AutorizacionDespegue = other.AutorizacionDespegue;
+      }
+      if (other.PistaDespegue.Length != 0) {
+        PistaDespegue = other.PistaDespegue;
+      }
+      if (other.AlturaDespegue != 0) {
+        AlturaDespegue = other.AlturaDespegue;
+      }
+      if (other.PosicionDespegue != 0) {
+        PosicionDespegue = other.PosicionDespegue;
+      }
+      if (other.AnteriorDespegue.Length != 0) {
+        AnteriorDespegue = other.AnteriorDespegue;
+      }
+      if (other.IpDestino.Length != 0) {
+        IpDestino = other.IpDestino;
+      }
+      if (other.IdAvion.Length != 0) {
+        IdAvion = other.IdAvion;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            AutorizacionDespegue = input.ReadBool();
+            break;
+          }
+          case 18: {
+            PistaDespegue = input.ReadString();
+            break;
+          }
+          case 24: {
+            AlturaDespegue = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            PosicionDespegue = input.ReadInt32();
+            break;
+          }
+          case 42: {
+            AnteriorDespegue = input.ReadString();
+            break;
+          }
+          case 50: {
+            IpDestino = input.ReadString();
+            break;
+          }
+          case 58: {
+            IdAvion = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class Pista_At : pb::IMessage<Pista_At> {
     private static readonly pb::MessageParser<Pista_At> _parser = new pb::MessageParser<Pista_At>(() => new Pista_At());
     private pb::UnknownFieldSet _unknownFields;
@@ -527,7 +990,7 @@ namespace Aeropuerto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Aeropuerto.TorreReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Aeropuerto.TorreReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -656,7 +1119,7 @@ namespace Aeropuerto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Aeropuerto.TorreReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Aeropuerto.TorreReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -925,7 +1388,7 @@ namespace Aeropuerto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Aeropuerto.TorreReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Aeropuerto.TorreReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1054,7 +1517,7 @@ namespace Aeropuerto {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Aeropuerto.TorreReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Aeropuerto.TorreReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
