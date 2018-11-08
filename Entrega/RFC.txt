@@ -1,0 +1,37 @@
+#    Problema
+	RFC intenta resolver el problema de comunicación entre distintas torres de control aereo y diversos aviones que
+	entran y salen de aeropertos, además de entregar información en las pantallas de éstos, cada sistema 
+	(avión, torre, pantalla) está programado en un lenguaje diferente (Python, C# y Node), los cuales deben 
+	interactuar entre sí, mediante el paso de distintos mensajes, utilizando grpc.	
+
+
+#    Duración
+	duracion 08 de noviembre de 2018
+
+#    Estado Actual
+	en espera de feedback
+
+
+#    Proponentes
+	* Diego Montecinos O. * Ian Mora P. * 
+
+
+#    Detalles
+	El problema fue propuesto en el contexto de una tarea para el ramo "Sistemas Distribuidos", el cual busca evaluar
+	la implementación de una aplicación distribuida, como lo sería el funcionamiento de distintos aeropuertos y los
+	aviones que llegan y salen de ellos.
+
+
+#    Solución propuesta
+	La solución propuesta fue generar un servidor en lenguaje Python, el cual corresponde a las torres de control, 
+	ya que son éstas las encargadas de entregar información. además de generar 2 clientes, uno en C# para los aviones
+	y uno en Node para las panallas, ya que éstos son los que buscan obtener información desde el servidor.
+
+
+#    Registro de votos
+	votos | Nombre
+	+1    | Diego Montecinos
+	+1    | Ian Mora
+
+#    Resolución
+	Presentado para aprobación
